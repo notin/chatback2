@@ -25,7 +25,6 @@ public class Messager
         Conversation conversation = getConversation(index);
         return conversation;
     }
-
     private Conversation getConversation(int index)
     {
         //TODO:Call db
