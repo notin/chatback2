@@ -76,7 +76,8 @@ public class Conversation{
 	}
 
 	@Override
- 	public String toString(){
+ 	public String toString()
+	{
 		return 
 			"Conversation{" + 
 			"conversation = '" + conversation + '\'' + 
