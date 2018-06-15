@@ -1,9 +1,9 @@
-package controllers;
+package com.chatback21.controllers;
 
+import com.chatback21.pojos.converation.Conversation;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import pojos.converation.Conversation;
 
 import java.util.ArrayList;
 import java.util.List;

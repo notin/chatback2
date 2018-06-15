@@ -1,4 +1,4 @@
-package pojos;
+package com.chatback21.pojos;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.databind.ObjectMapper;

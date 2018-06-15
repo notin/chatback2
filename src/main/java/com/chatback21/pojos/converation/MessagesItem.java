@@ -1,4 +1,4 @@
-package pojos.converation;
+package com.chatback21.pojos.converation;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

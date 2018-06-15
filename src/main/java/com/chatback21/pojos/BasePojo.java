@@ -1,4 +1,4 @@
-package pojos;
+package com.chatback21.pojos;
 
 import org.testng.log4testng.Logger;
 

@@ -1,7 +1,7 @@
-package utils;
+package com.chatback21.utils;
 
+import com.chatback21.errorhandler.MyErrorHandler;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import errorhandler.MyErrorHandler;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.util.UriComponentsBuilder;

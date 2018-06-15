@@ -1,4 +1,4 @@
-package utils;
+package com.chatback21.utils;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
