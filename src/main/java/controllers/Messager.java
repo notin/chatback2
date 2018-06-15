@@ -32,5 +32,4 @@ public class Messager
         List<Conversation> conversations = new ArrayList<>();
         return conversations.stream().filter(x->x.getId() == index).findFirst().get();
     }
-
 }
