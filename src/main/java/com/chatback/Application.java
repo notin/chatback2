@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import java.util.logging.Logger;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.chatback2")
+@ComponentScan(basePackages = "com.chatback")
 public class Application
 {
 	public static void main(String[] args)
