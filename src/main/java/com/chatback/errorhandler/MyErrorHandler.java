@@ -1,6 +1,6 @@
-package com.chatback21.errorhandler;
+package com.chatback.errorhandler;
 
-import com.chatback21.utils.JsonConverter;
+import com.chatback.utils.JsonConverter;
 import org.springframework.http.client.ClientHttpResponse;
 import org.springframework.web.client.ResponseErrorHandler;
 

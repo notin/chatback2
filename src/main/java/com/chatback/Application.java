@@ -1,4 +1,4 @@
-package com.chatback21;
+package com.chatback;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import java.util.logging.Logger;
 
 @SpringBootApplication
-@ComponentScan(basePackages = "com.chatback21")
+@ComponentScan(basePackages = "com.chatback2")
 public class Application
 {
 	public static void main(String[] args)

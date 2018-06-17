@@ -1,15 +1,15 @@
-package com.chatback21.controllers;
+package com.chatback.controllers;
 
-import com.chatback21.pojos.converation.Conversation;
-import org.springframework.stereotype.Controller;
+import com.chatback.pojos.converation.Conversation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
-@Controller
+@RestController
 public class Messager
 {
     @RequestMapping(value = "chat", method = RequestMethod.POST)

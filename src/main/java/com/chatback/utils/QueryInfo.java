@@ -1,4 +1,4 @@
-package com.chatback21.utils;
+package com.chatback.utils;
 
 public enum QueryInfo
 {
