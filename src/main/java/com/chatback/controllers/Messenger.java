@@ -10,7 +10,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
-public class Messager
+public class Messenger
 {
     @RequestMapping(value = "chat", method = RequestMethod.POST)
     public void receive(Conversation conversation)

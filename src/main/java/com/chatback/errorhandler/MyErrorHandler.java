@@ -2,13 +2,14 @@ package com.chatback.errorhandler;
 
 import com.chatback.utils.JsonConverter;
 import org.springframework.http.client.ClientHttpResponse;
+import org.springframework.stereotype.Component;
 import org.springframework.web.client.ResponseErrorHandler;
 
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.logging.Level;
 
-
+@Component
 public class MyErrorHandler implements ResponseErrorHandler {
 
     java.util.logging.Logger logger = java.util.logging.Logger.getAnonymousLogger();
