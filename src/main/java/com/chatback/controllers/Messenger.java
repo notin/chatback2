@@ -3,6 +3,7 @@ package com.chatback.controllers;
 import com.chatback.pojos.converation.Conversation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
@@ -20,7 +21,7 @@ public class Messenger
     }
 
     @RequestMapping(value = "chat", method = RequestMethod.GET)
-    public Conversation retrieve(Integer index)
+    public Conversation retrieve(@RequestParam(defaultValue = "1") int index)
     {
         Conversation conversation = getConversation(index);
         return conversation;
