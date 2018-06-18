@@ -2,11 +2,12 @@ package com.chatback.utils;
 
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.testng.log4testng.Logger;
+
+import java.util.logging.Logger;
 
 public class JsonConverter
 {
-    Logger logger = Logger.getLogger(this.getClass());
+    Logger logger = Logger.getAnonymousLogger();
     ObjectMapper mapper = new ObjectMapper();
 
     public JsonConverter()
@@ -35,7 +36,7 @@ public class JsonConverter
         }
         catch (Exception e)
         {
-            logger.debug(e.getMessage());
+            logger.info(e.getMessage());
         }
         return jsonInString;
     }

@@ -1,5 +1,6 @@
 package com.chatback.controllers;
 
+import com.chatback.pojos.converation.Conversation;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +16,7 @@ public class Messenger
     @RequestMapping(value = "chat", method = RequestMethod.POST)
     public void receive(Conversation conversation)
     {
-        String timestamp = String.valueOf(conversation.getMessages().get(0).getMessage().getTimestamp());
+        String timestamp = String.valueOf(conversation.getMessages().get(0).getTimestamp());
         Logger.getAnonymousLogger().info(timestamp);
     }
 
