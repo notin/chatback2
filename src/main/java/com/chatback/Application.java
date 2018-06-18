@@ -14,6 +14,5 @@ public class Application
 	public static void main(String[] args)
 	{
 		ConfigurableApplicationContext configurableApplicationContext = SpringApplication.run(Application.class, args);
-		configurableApplicationContext.getEnvironment().getSystemProperties().keySet().stream().forEachOrdered(x->Logger.getAnonymousLogger().info(x));
 	}
 }

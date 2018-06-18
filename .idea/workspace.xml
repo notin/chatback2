@@ -2,95 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_jaxb_annotations_2_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_9_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_ws_rs_javax_ws_rs_api_2_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_7_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_7_11.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_10_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_31.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_31.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_31.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_31.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_9_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_class_model_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_config_types_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_aopalliance_repackaged_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_external_asm_all_repackaged_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_api_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_config_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_core_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_locator_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_runlevel_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_hk2_utils_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_osgi_resource_locator_1_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_hk2_spring_bridge_2_5_0_b42.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_containers_jersey_container_servlet_core_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_client_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_common_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_core_jersey_server_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_bean_validation_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_entity_filtering_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_ext_jersey_spring4_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_inject_jersey_hk2_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_jaxb_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jersey_media_jersey_media_json_jackson_2_26.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_10_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_CR2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_15_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_6.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_22.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jersey_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_0_3_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_0_7_RELEASE.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_5_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_19.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/reaction.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/Application.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -106,16 +21,10 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-520">
+            <state relative-caret-position="440">
               <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
               <folding>
-                <marker date="1529291960146" expanded="true" signature="2628:2650" ph="..." />
-                <marker date="1529291960146" expanded="true" signature="2628:3031" ph="..." />
-                <marker date="1529291960146" expanded="true" signature="2671:2813" ph="..." />
-                <marker date="1529291960146" expanded="true" signature="2834:3011" ph="..." />
-                <marker date="1529291960146" expanded="true" signature="3044:3263" ph="..." />
-                <marker date="1529291960146" expanded="true" signature="3062:3250" ph="..." />
-                <marker date="1529291960146" expanded="true" signature="3083:3231" ph="..." />
+                <marker date="1529292684416" expanded="true" signature="3256:3263" ph="..." />
               </folding>
             </state>
           </provider>
@@ -124,95 +33,95 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-720">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <marker date="1529292424859" expanded="true" signature="78907:78949" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="78907:78967" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="78907:78980" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="78907:78995" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79030:81245" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79043:81230" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79097:79392" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79116:79377" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79179:79357" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79219:79323" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79240:79301" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79442:79751" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79461:79736" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79538:79716" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79578:79682" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79599:79660" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79802:80067" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79821:80052" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79854:80032" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79894:79998" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="79915:79976" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80110:80416" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80129:80401" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80203:80381" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80243:80347" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80264:80325" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80467:80818" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80486:80803" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80566:80783" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80606:80749" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80627:80727" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80870:81216" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="80889:81201" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="81003:81181" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="81043:81147" ph="..." />
-                <marker date="1529292424859" expanded="true" signature="81064:81125" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="60922:60982" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="60922:60995" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="60922:61010" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="60922:60964" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61045:63260" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61058:63245" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61112:61407" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61131:61392" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61194:61372" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61234:61338" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61255:61316" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61457:61766" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61476:61751" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61553:61731" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61593:61697" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61614:61675" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61817:62082" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61836:62067" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61869:62047" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61909:62013" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="61930:61991" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62125:62431" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62144:62416" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62218:62396" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62258:62362" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62279:62340" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62482:62833" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62501:62818" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62581:62798" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62621:62764" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62642:62742" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62885:63231" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="62904:63216" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="63018:63196" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="63058:63162" ph="..." />
+                <marker date="1529293593412" expanded="true" signature="63079:63140" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_6.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Messenger.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Messenger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="880">
-              <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+            <state relative-caret-position="261">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Maven__com_fasterxml_classmate_1_3_4.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml">
+      <file leaf-file-name="Conversation.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/Conversation.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="520">
+              <caret line="13" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reaction.sql" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/reaction.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="280">
+              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="370">
+              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/Application.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -221,7 +130,7 @@
       <file leaf-file-name="chatback2.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/chatback2.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
+            <state relative-caret-position="320">
               <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
               <folding />
             </state>
@@ -293,16 +202,17 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatback21/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback21/controllers/Messager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/errorhandler/MyErrorHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/Application.java" />
         <option value="$PROJECT_DIR$/src/main/resources/Conversation.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/MessagesItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Response.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/utils/JsonConverter.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/reaction.sql" />
       </list>
     </option>
   </component>
@@ -341,9 +251,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -396,15 +305,6 @@
               <item name="chatback2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="chatback" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -416,6 +316,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,13 +365,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.chatback.Application" />
-      <option name="SHOW_IN_DASHBOARD" value="true" />
-      <module name="chatback2" />
-      <envs />
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.chatback2.Application" />
       <option name="SHOW_IN_DASHBOARD" value="true" />
       <module name="chatback2" />
       <envs />
@@ -605,11 +499,10 @@
       <module name="chatback2" />
       <envs />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="Application.start" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ApplicationTests.contextLoads" />
-      <item index="3" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
+    <list size="3">
+      <item index="0" class="java.lang.String" itemvalue="Application.start" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ApplicationTests.contextLoads" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.Application (1)" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -633,6 +526,8 @@
       <workItem from="1529077528188" duration="16685000" />
       <workItem from="1529290340206" duration="661000" />
       <workItem from="1529291464583" duration="318000" />
+      <workItem from="1529292908410" duration="117000" />
+      <workItem from="1529293046741" duration="951000" />
     </task>
     <task id="LOCAL-00001" summary="Sadfg">
       <created>1529077706570</created>
@@ -775,7 +670,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20039000" />
+    <option name="totallyTimeSpent" value="21309000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -795,47 +690,23 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="combo" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33103052" sideWeight="0.5" order="13" side_tool="false" content_ui="combo" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28727692" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32584918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23048128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2868984" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49683362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32584918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930338" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23048128" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -865,28 +736,47 @@
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/Application.java</url>
-          <line>16</line>
-          <properties>
-            <option name="lambda-ordinal" value="-1" />
-          </properties>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/com/chatback/ApplicationTests.java</url>
           <line>18</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="8" />
+      <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/converation/Message.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/converation/MessagesItem.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonConverter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Credentials.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Caller.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/controllers/Messager.java" />
@@ -897,13 +787,7 @@
         <state relative-caret-position="1240">
           <caret line="31" column="19" lean-forward="false" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="19" />
           <folding>
-            <marker date="1529291960146" expanded="true" signature="2628:2650" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="2628:3031" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="2671:2813" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="2834:3011" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="3044:3263" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="3062:3250" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="3083:3231" ph="..." />
+            <marker date="1529292684416" expanded="true" signature="3256:3263" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1028,17 +912,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chatback2.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
+        <state relative-caret-position="320">
           <caret line="8" column="55" lean-forward="false" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
           <folding />
         </state>
@@ -1046,78 +922,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-520">
+        <state relative-caret-position="440">
           <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
           <folding>
-            <marker date="1529291960146" expanded="true" signature="2628:2650" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="2628:3031" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="2671:2813" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="2834:3011" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="3044:3263" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="3062:3250" ph="..." />
-            <marker date="1529291960146" expanded="true" signature="3083:3231" ph="..." />
+            <marker date="1529292684416" expanded="true" signature="3256:3263" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback2/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-720">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1529292424859" expanded="true" signature="78907:78949" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="78907:78967" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="78907:78980" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="78907:78995" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79030:81245" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79043:81230" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79097:79392" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79116:79377" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79179:79357" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79219:79323" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79240:79301" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79442:79751" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79461:79736" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79538:79716" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79578:79682" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79599:79660" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79802:80067" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79821:80052" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79854:80032" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79894:79998" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="79915:79976" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80110:80416" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80129:80401" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80203:80381" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80243:80347" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80264:80325" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80467:80818" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80486:80803" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80566:80783" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80606:80749" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80627:80727" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80870:81216" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="80889:81201" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="81003:81181" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="81043:81147" ph="..." />
-            <marker date="1529292424859" expanded="true" signature="81064:81125" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback2/Application.java" />
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1125,7 +942,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1133,7 +949,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1141,14 +956,90 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1529293593412" expanded="true" signature="60922:60982" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="60922:60995" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="60922:61010" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="60922:60964" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61045:63260" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61058:63245" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61112:61407" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61131:61392" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61194:61372" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61234:61338" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61255:61316" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61457:61766" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61476:61751" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61553:61731" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61593:61697" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61614:61675" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61817:62082" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61836:62067" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61869:62047" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61909:62013" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="61930:61991" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62125:62431" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62144:62416" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62218:62396" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62258:62362" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62279:62340" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62482:62833" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62501:62818" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62581:62798" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62621:62764" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62642:62742" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62885:63231" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="62904:63216" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="63018:63196" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="63058:63162" ph="..." />
+            <marker date="1529293593412" expanded="true" signature="63079:63140" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="370">
+          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="880">
-          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
+        <state relative-caret-position="261">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Conversation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="13" column="22" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/reaction.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
