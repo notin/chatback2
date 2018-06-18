@@ -1,91 +1,38 @@
 package com.chatback.pojos.converation;
 
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Data;
 
 import javax.annotation.Generated;
-import java.util.List;
 
-@Generated("com.robohorse.robopojogenerator")
+@Data
 public class Conversation{
 
-	@JsonProperty("conversation")
-	private Conversation conversation;
-
-	@JsonProperty("log")
-	private Log log;
-
-	@JsonProperty("endtime")
-	private int endtime;
-
 	@JsonProperty("responses")
-	private List<ResponsesItem> responses;
+	private List<Response> responses;
+
+	@JsonProperty("messages")
+	private List<Message> messages;
+
+	@JsonProperty("startTime")
+	private int startTime;
 
 	@JsonProperty("id")
 	private int id;
 
-	@JsonProperty("starttime")
-	private int starttime;
-
-	public void setConversation(Conversation conversation){
-		this.conversation = conversation;
-	}
-
-	public Conversation getConversation(){
-		return conversation;
-	}
-
-	public void setLog(Log log){
-		this.log = log;
-	}
-
-	public Log getLog(){
-		return log;
-	}
-
-	public void setEndtime(int endtime){
-		this.endtime = endtime;
-	}
-
-	public int getEndtime(){
-		return endtime;
-	}
-
-	public void setResponses(List<ResponsesItem> responses){
-		this.responses = responses;
-	}
-
-	public List<ResponsesItem> getResponses(){
-		return responses;
-	}
-
-	public void setId(int id){
-		this.id = id;
-	}
-
-	public int getId(){
-		return id;
-	}
-
-	public void setStarttime(int starttime)
-	{
-		this.starttime = starttime;
-	}
-
-	public int getStarttime(){
-		return starttime;
-	}
+	@JsonProperty("endTime")
+	private int endTime;
 
 	@Override
- 	public String toString()
-	{
+ 	public String toString(){
 		return 
 			"Conversation{" + 
-			"conversation = '" + conversation + '\'' + 
-			",log = '" + log + '\'' + 
-			",endtime = '" + endtime + '\'' + 
-			",responses = '" + responses + '\'' + 
+			"responses = '" + responses + '\'' + 
+			",messages = '" + messages + '\'' + 
+			",startTime = '" + startTime + '\'' + 
 			",id = '" + id + '\'' + 
-			",starttime = '" + starttime + '\'' + 
+			",endTime = '" + endTime + '\'' + 
 			"}";
 		}
 }

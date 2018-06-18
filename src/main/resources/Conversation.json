@@ -1,0 +1,34 @@
+{
+  "id": 2,
+  "startTime": 1234566,
+  "endTime": 1234566,
+  "responses" :
+  [
+    {
+      "type": "starting",
+      "gui_1": "good",
+      "gui_2": "bad"
+    },
+    {
+      "type": "starting",
+      "gui_1": "good",
+      "gui_2": "bad"
+    }
+  ],
+  "messages":
+  [
+    {
+      "text": "Hello",
+      "from": "uid1",
+      "to": "uid2",
+      "timestamp": 1234566
+    },
+    {
+      "text": "How are you?",
+      "from": "uid1",
+      "to": "uid2",
+      "timestamp": 35435553535
+    }
+  ]
+
+}
