@@ -21,7 +21,6 @@ public class Messenger
         String timestamp = String.valueOf(conversation.getMessages().get(0).getTimestamp());
         Logger.getAnonymousLogger().info(timestamp);
     }
-
     @RequestMapping(value = "chat", method = RequestMethod.GET)
     public Conversation retrieve(@RequestParam(defaultValue = "1") int index)
     {
