@@ -31,7 +31,6 @@ public class Messenger
     private Conversation getConversation(int index)
     {
         //TODO:Call db
-
         List<Conversation> conversations = new ArrayList<>();
 
         //TODO:remove stub
