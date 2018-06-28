@@ -1,5 +1,6 @@
 package com.chatback.controllers;
 
+import com.chatback.broker.DatabaseBroker;
 import com.chatback.pojos.converation.Conversation;
 import com.chatback.pojos.converation.Message;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -30,6 +31,8 @@ public class Messenger
     private Conversation getConversation(int index)
     {
         //TODO:Call db
+        DatabaseBroker databaseBroker = new DatabaseBroker();
+        databaseBroker.getMessages(index);
         List<Conversation> conversations = new ArrayList<>();
 
         //TODO:remove stub
