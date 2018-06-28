@@ -2,6 +2,7 @@ package com.chatback.broker;
 
 
 import com.chatback.pojos.converation.Message;
+import org.mariadb.jdbc.MariaDbConnection;
 import org.mariadb.jdbc.MariaDbDataSource;
 
 import java.sql.*;
@@ -19,13 +20,7 @@ public class DatabaseBroker
         Message m = null;
         // This SQL statement produces all table
         // names and column names in the H2 schema
-        String sql = "select table_name, column_name " +
-                "from information_schema.columns " +
-                "order by " +
-                "table_catalog, " +
-                "table_schema, " +
-                "table_name, " +
-                "ordinal_position";
+        String sql = "select conversation from messages where id = "+id;
 
         ResultSet resultSet = null;
         try {
@@ -42,14 +37,22 @@ public class DatabaseBroker
     {
         ResultSet set = null;
 
-        MariaDbDataSource mariaDbDataSource = new MariaDbDataSource("jdbc:mariadb://localhost:3307/db");
-        mariaDbDataSource.setUserName("root");
-        mariaDbDataSource.setPassword("installeSQL9");
-        Connection c = mariaDbDataSource.getConnection();
+//        MariaDbConnection connection = new MariaDbConnection();
+//        MariaDbDataSource mariaDbDataSource = new MariaDbDataSource("localhost");
+//        mariaDbDataSource.setPort(3307);
+//        mariaDbDataSource.setUserName("root");
+//        mariaDbDataSource.setPassword("installedSQL9");
+//        mariaDbDataSource.setDatabaseName("test2");
+//        Connection c = mariaDbDataSource.getConnection();
+        Class.forName("org.mariadb.jdbc.Driver");
+
+        Connection c = DriverManager.getConnection(
+                "jdbc:mariadb://localhost:3307/test2", "root", "installedSQL9");
         Statement statement = c.createStatement();
 
         set = statement.executeQuery(sql);
 
         return set;
     }
+//     insert into messages values (1,'test1','test2', 'this is the first');
 }
