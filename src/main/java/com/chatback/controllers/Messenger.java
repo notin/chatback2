@@ -32,12 +32,12 @@ public class Messenger
     {
         //TODO:Call db
         DatabaseBroker databaseBroker = new DatabaseBroker();
-        databaseBroker.getMessages(index);
+        Message message = databaseBroker.getMessages(index);
         List<Conversation> conversations = new ArrayList<>();
 
         //TODO:remove stub
         conversations.add(Conversation.builder().id(1)
-                        .messages(Collections.singletonList(Message.builder().text("text").build()))
+                        .messages(Collections.singletonList(message))
                         .build());
         return conversations.stream().filter(x->x.getId() == index).findFirst().get();
     }

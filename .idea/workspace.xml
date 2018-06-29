@@ -4,6 +4,8 @@
     <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/broker/DatabaseBroker.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/broker/DatabaseBroker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -42,8 +44,8 @@
       <file leaf-file-name="Messenger.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+            <state relative-caret-position="585">
+              <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -52,8 +54,8 @@
       <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1033">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
+            <state relative-caret-position="254">
+              <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -62,11 +64,21 @@
       <file leaf-file-name="DatabaseBroker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/DatabaseBroker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+            <state relative-caret-position="635">
+              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Message.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="160">
+              <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -131,16 +143,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DriverManager.java" pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/DriverManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2800">
-              <caret line="99" column="12" lean-forward="false" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -190,7 +192,6 @@
         <option value="$PROJECT_DIR$/src/main/resources/Conversation.json" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/MessagesItem.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/utils/JsonConverter.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/Application.java" />
@@ -199,8 +200,9 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/broker/DatabaseBroker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
       </list>
     </option>
   </component>
@@ -532,7 +534,7 @@
       <workItem from="1529784780614" duration="43000" />
       <workItem from="1529988098855" duration="262000" />
       <workItem from="1530143503449" duration="157000" />
-      <workItem from="1530143701493" duration="3101000" />
+      <workItem from="1530143701493" duration="5134000" />
     </task>
     <task id="LOCAL-00001" summary="Sadfg">
       <created>1529077706570</created>
@@ -688,7 +690,14 @@
       <option name="project" value="LOCAL" />
       <updated>1530144033794</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="db maybe functioning">
+      <created>1530199512877</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1530199512877</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -724,7 +733,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30395000" />
+    <option name="totallyTimeSpent" value="32428000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -843,7 +852,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatback/broker/DatabaseBroker.java</url>
-          <line>48</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
@@ -853,8 +862,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/converation/Message.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/pojos/converation/MessagesItem.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/JsonConverter.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/pojos/Credentials.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/utils/Caller.java" />
@@ -1068,14 +1075,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1033">
-          <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/utils/Caller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1920">
@@ -1120,20 +1119,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/DriverManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2800">
+          <caret line="99" column="12" lean-forward="false" selection-start-line="99" selection-start-column="12" selection-end-line="99" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="5" lean-forward="false" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/DatabaseBroker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="14" column="1" lean-forward="false" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        <state relative-caret-position="635">
+          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="127" column="0" lean-forward="false" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        <state relative-caret-position="585">
+          <caret line="39" column="67" lean-forward="false" selection-start-line="39" selection-start-column="67" selection-end-line="39" selection-end-column="67" />
           <folding />
         </state>
       </provider>

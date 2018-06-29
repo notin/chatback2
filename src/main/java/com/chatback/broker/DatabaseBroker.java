@@ -20,12 +20,16 @@ public class DatabaseBroker
         Message m = null;
         // This SQL statement produces all table
         // names and column names in the H2 schema
-        String sql = "select conversation from messages where id = "+id;
+            String sql = "select conversation from messages where id = "+id;
 
         ResultSet resultSet = null;
         try {
             resultSet = connectToDatabase(sql);
-             m = (Message)resultSet.getObject(1);
+            if (resultSet.next()) {
+                String message = resultSet.getString(1);
+                m = Message.builder().build();
+                m.setText(message);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

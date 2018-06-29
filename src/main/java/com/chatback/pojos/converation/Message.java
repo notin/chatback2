@@ -22,6 +22,7 @@ public class Message {
 	@JsonProperty("timestamp")
 	private int timestamp;
 
+
 	@Override
  	public String toString(){
 		return 
@@ -32,4 +33,5 @@ public class Message {
 			",timestamp = '" + timestamp + '\'' + 
 			"}";
 		}
+
 }
