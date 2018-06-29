@@ -2,8 +2,6 @@ package com.chatback.broker;
 
 
 import com.chatback.pojos.converation.Message;
-import org.mariadb.jdbc.MariaDbConnection;
-import org.mariadb.jdbc.MariaDbDataSource;
 
 import java.sql.*;
 import java.util.logging.Logger;
@@ -20,6 +18,7 @@ public class DatabaseBroker
         Message m = null;
         // This SQL statement produces all table
         // names and column names in the H2 schema
+
             String sql = "select conversation from messages where id = "+id;
 
         ResultSet resultSet = null;
@@ -35,6 +34,49 @@ public class DatabaseBroker
         }
     return m;
 
+    }
+
+
+    public void setMessages(String gui1, String gui2, Message message)
+    {
+        Message m = null;
+        // This SQL statement produces all table
+        // names and column names in the H2 schema
+        String id = " select count(*) from messages;";
+        int index = getID(id);
+
+        String sql = "INSERT INTO messages VALUES ('"+index+"','"+gui1+"','"+gui2+"', '"+message.getText()+"')";
+
+        ResultSet resultSet = getResult(sql);
+
+
+    }
+
+    private int getID(String sql) {
+        ResultSet resultSet = null;
+        int index =-1;
+        try {
+            resultSet = connectToDatabase(sql);
+            if (resultSet.next()) {
+                index = resultSet.getInt(1);
+//                Logger.getAnonymousLogger().info("Status : " + String.valueOf(resultSet.rowInserted()));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return index;
+    }
+    private ResultSet getResult(String sql) {
+        ResultSet resultSet = null;
+        try {
+            resultSet = connectToDatabase(sql);
+            if (resultSet.next()) {
+                Logger.getAnonymousLogger().info("Status : " + String.valueOf(resultSet.rowInserted()));
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return resultSet;
     }
 
     private ResultSet connectToDatabase(String sql) throws Exception
