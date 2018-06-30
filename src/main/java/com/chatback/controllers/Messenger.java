@@ -1,6 +1,6 @@
 package com.chatback.controllers;
 
-import com.chatback.broker.DatabaseBroker;
+import com.chatback.broker.database.DatabaseBroker;
 import com.chatback.pojos.converation.Conversation;
 import com.chatback.pojos.converation.Message;
 import org.springframework.web.bind.annotation.*;

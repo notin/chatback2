@@ -1,4 +1,4 @@
-package com.chatback.broker;
+package com.chatback.broker.database;
 
 
 import com.chatback.pojos.converation.Message;
@@ -90,10 +90,10 @@ public class DatabaseBroker
 //        mariaDbDataSource.setPassword("installedSQL9");
 //        mariaDbDataSource.setDatabaseName("test2");
 //        Connection c = mariaDbDataSource.getConnection();
-        Class.forName("org.mariadb.jdbc.Driver");
+        Class.forName(SQLConfig.DRIVER);
 
         Connection c = DriverManager.getConnection(
-                "jdbc:mariadb://localhost:3307/test2", "root", "installedSQL9");
+                SQLConfig.JDBC+"://"+SQLConfig.URL+":"+SQLConfig.PORT+"/"+SQLConfig.DATABASE, SQLConfig.USER, SQLConfig.PASSWORD);
         Statement statement = c.createStatement();
 
         set = statement.executeQuery(sql);
