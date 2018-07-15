@@ -1,0 +1,7 @@
+language: java
+script:
+install:
+-npm install -g firebase-tools
+after_success:
+- firebase deploy --token 1/B3mH6A72Y2ZzZTNmi2_KS4WX0XA2GQK01qpUzp6D1QMheIvL6pFPrVIbk72w2Kk6
+
