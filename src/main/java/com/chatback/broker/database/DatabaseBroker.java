@@ -39,15 +39,46 @@ public class DatabaseBroker
 
     public void createUserRecord(User user)
     {
-
         // This SQL statement produces all table
         // names and column names in the H2 schema
         String id = " select count(*) from users;";
         int index = getID(id);
 
-        String sql = "INSERT INTO users VALUES ('"+index+"','"+user.getUsername()+"','"+user.getAge()+"', '"+user.getGender()+"', '"+user.getGender()+"')";
+        String sql = "INSERT INTO users VALUES ('"+user.getUsername()+"','"+user.getAge()+"', '"+user.getGender()+"', '"+user.getGender()+"')";
 
         ResultSet resultSet = getResult(sql);
+    }
+
+    public User getUserDetails(String username)
+    {
+        // This SQL statement produces all table
+        // names and column names in the H2 schema
+        String id = " select count(*) from users;";
+        int index = getID(id);
+
+        String sql = "SELECT * from users where username is "+username+"";
+        ResultSet resultSet =null;
+        User user = null;
+        try
+        {
+
+            resultSet = connectToDatabase(sql);
+            if (resultSet.next()) {
+                String userName = resultSet.getString(1);
+                int age = resultSet.getInt(2);
+                String gender = resultSet.getString(3);
+                String preferedGender = resultSet.getString(5);
+
+                user = User.builder().build();
+                user.setUsername(username);
+                user.setAge(age);
+                user.setGender(gender);
+                user.setPreferedGenderOfPartner(preferedGender);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return user;
     }
 
     public void setMessages(String gui1, String gui2, Message message)
@@ -70,7 +101,6 @@ public class DatabaseBroker
             resultSet = connectToDatabase(sql);
             if (resultSet.next()) {
                 index = resultSet.getInt(1);
-//                Logger.getAnonymousLogger().info("Status : " + String.valueOf(resultSet.rowInserted()));
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -93,23 +123,13 @@ public class DatabaseBroker
     private ResultSet connectToDatabase(String sql) throws Exception
     {
         ResultSet set = null;
-
-//        MariaDbConnection connection = new MariaDbConnection();
-//        MariaDbDataSource mariaDbDataSource = new MariaDbDataSource("localhost");
-//        mariaDbDataSource.setPort(3307);
-//        mariaDbDataSource.setUserName("root");
-//        mariaDbDataSource.setPassword("installedSQL9");
-//        mariaDbDataSource.setDatabaseName("test2");
-//        Connection c = mariaDbDataSource.getConnection();
         Class.forName(SQLConfig.DRIVER);
-
         Connection c = DriverManager.getConnection(
                 SQLConfig.JDBC+"://"+SQLConfig.URL+":"+SQLConfig.PORT+"/"+SQLConfig.DATABASE, SQLConfig.USER, SQLConfig.PASSWORD);
         Statement statement = c.createStatement();
-
         set = statement.executeQuery(sql);
 
         return set;
     }
-//     insert into messages values (1,'test1','test2', 'this is the first');
+
 }
