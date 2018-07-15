@@ -1,5 +1,5 @@
 language: java
-script:
+script: mvn spring-boot:run
 install:
 -npm install -g firebase-tools
 after_success:
