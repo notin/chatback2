@@ -28,7 +28,6 @@ public class UserManager
     @RequestMapping(value = "users", method = RequestMethod.GET)
     public User retrieveUser(@RequestParam(defaultValue = "test") String username)
     {
-
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
         //TODO:Call db

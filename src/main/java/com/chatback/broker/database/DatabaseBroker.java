@@ -53,11 +53,9 @@ public class DatabaseBroker
     {
         // This SQL statement produces all table
         // names and column names in the H2 schema
-        String id = " select count(*) from users;";
-        int index = getID(id);
 
-        String sql = "SELECT * from users where username is "+username+"";
-        ResultSet resultSet =null;
+        String sql = "SELECT * from users where username = '"+username+"';";
+        ResultSet resultSet = null;
         User user = null;
         try
         {
@@ -67,7 +65,7 @@ public class DatabaseBroker
                 String userName = resultSet.getString(1);
                 int age = resultSet.getInt(2);
                 String gender = resultSet.getString(3);
-                String preferedGender = resultSet.getString(5);
+                String preferedGender = resultSet.getString(4);
 
                 user = User.builder().build();
                 user.setUsername(username);

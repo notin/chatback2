@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/sql.properties" afterPath="$PROJECT_DIR$/src/main/resources/sql.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -47,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sql.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="sql.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/sql.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
               <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="640">
+              <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
               <folding />
             </state>
           </provider>
@@ -63,52 +74,53 @@
             <state relative-caret-position="-6560">
               <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
               <folding>
-                <marker date="1531666495499" expanded="true" signature="88161:88203" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88161:88221" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88161:88234" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88161:88249" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88284:90499" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88297:90484" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88351:88646" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88370:88631" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88433:88611" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88473:88577" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88494:88555" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88696:89005" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88715:88990" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88792:88970" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88832:88936" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="88853:88914" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89056:89321" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89075:89306" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89148:89252" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89169:89230" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89364:89670" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89383:89655" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89457:89635" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89497:89601" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89518:89579" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89721:90072" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89740:90057" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89820:90037" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89860:90003" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="89881:89981" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="90124:90470" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="90143:90455" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="90257:90435" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="90297:90401" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="90318:90379" ph="..." />
-                <marker date="1531666495499" expanded="true" signature="90544:90649" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89004:89046" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89004:89064" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89004:89077" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89004:89092" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89127:91342" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89140:91327" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89194:89489" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89213:89474" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89276:89454" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89316:89420" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89337:89398" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89539:89848" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89558:89833" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89635:89813" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89675:89779" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89696:89757" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89899:90164" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89918:90149" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89951:90129" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="89991:90095" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90012:90073" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90207:90513" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90226:90498" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90300:90478" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90340:90444" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90361:90422" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90564:90915" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90583:90900" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90663:90880" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90703:90846" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90724:90824" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90967:91313" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="90986:91298" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="91100:91278" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="91140:91244" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="91161:91222" ph="..." />
+                <marker date="1531667030711" expanded="true" signature="91387:91492" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseBroker.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DatabaseBroker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+            <state relative-caret-position="273">
+              <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -149,16 +161,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="200">
               <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InvocableHandlerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4120">
-              <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -227,11 +229,11 @@
         <option value="$PROJECT_DIR$/src/main/resources/SQLscripts" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/sql.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" />
       </list>
     </option>
   </component>
@@ -768,7 +770,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531534045499</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="db maybe functioning">
+      <created>1531666654061</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1531666654061</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -804,7 +813,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47710000" />
+    <option name="totallyTimeSpent" value="48105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
@@ -960,6 +969,12 @@
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/SQLConfig.java</url>
           <line>35</line>
@@ -967,7 +982,7 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1110,6 +1125,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="400">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1190,6 +1206,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1640">
           <caret line="64" column="14" lean-forward="false" selection-start-line="64" selection-start-column="14" selection-end-line="64" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1272,63 +1289,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="25" column="31" lean-forward="false" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-6560">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
-            <marker date="1531666495499" expanded="true" signature="88161:88203" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88161:88221" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88161:88234" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88161:88249" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88284:90499" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88297:90484" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88351:88646" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88370:88631" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88433:88611" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88473:88577" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88494:88555" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88696:89005" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88715:88990" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88792:88970" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88832:88936" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="88853:88914" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89056:89321" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89075:89306" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89148:89252" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89169:89230" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89364:89670" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89383:89655" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89457:89635" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89497:89601" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89518:89579" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89721:90072" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89740:90057" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89820:90037" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89860:90003" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="89881:89981" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="90124:90470" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="90143:90455" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="90257:90435" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="90297:90401" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="90318:90379" ph="..." />
-            <marker date="1531666495499" expanded="true" signature="90544:90649" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89004:89046" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89004:89064" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89004:89077" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89004:89092" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89127:91342" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89140:91327" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89194:89489" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89213:89474" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89276:89454" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89316:89420" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89337:89398" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89539:89848" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89558:89833" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89635:89813" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89675:89779" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89696:89757" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89899:90164" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89918:90149" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89951:90129" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="89991:90095" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90012:90073" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90207:90513" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90226:90498" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90300:90478" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90340:90444" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90361:90422" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90564:90915" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90583:90900" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90663:90880" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90703:90846" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90724:90824" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90967:91313" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="90986:91298" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="91100:91278" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="91140:91244" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="91161:91222" ph="..." />
+            <marker date="1531667030711" expanded="true" signature="91387:91492" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1345,6 +1347,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
           <folding />
         </state>
       </provider>
