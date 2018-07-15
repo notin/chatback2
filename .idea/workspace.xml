@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firebase.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.travis.yml" afterPath="$PROJECT_DIR$/.travis.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2400">
+            <state relative-caret-position="0">
               <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="64" selection-end-column="25" />
               <folding />
             </state>
@@ -43,54 +43,6 @@
             <state relative-caret-position="240">
               <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
-              <folding>
-                <marker date="1531693875144" expanded="true" signature="84670:84813" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84670:84831" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84670:84844" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84670:84859" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84894:87109" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84907:87094" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84961:85256" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="84980:85241" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85043:85221" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85083:85187" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85104:85165" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85306:85615" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85325:85600" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85402:85580" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85442:85546" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85463:85524" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85666:85931" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85685:85916" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85718:85896" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85758:85862" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85779:85840" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85974:86280" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="85993:86265" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86067:86245" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86107:86211" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86128:86189" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86331:86682" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86350:86667" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86430:86647" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86470:86613" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86491:86591" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86734:87080" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86753:87065" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86867:87045" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86907:87011" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="86928:86989" ph="..." />
-                <marker date="1531693875144" expanded="true" signature="87154:87259" ph="..." />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -145,11 +97,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="true">
+      <file leaf-file-name=".travis.yml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.travis.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firebase.txt" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/firebase.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -234,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
         <option value="$PROJECT_DIR$/.travis.yml" />
+        <option value="$PROJECT_DIR$/firebase.txt" />
       </list>
     </option>
   </component>
@@ -292,80 +255,6 @@
             <path>
               <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
               <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="generated-test-sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-status" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-status" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-compiler-plugin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-status" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-compiler-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="compile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-status" type="462c0819:PsiDirectoryNode" />
-              <item name="maven-compiler-plugin" type="462c0819:PsiDirectoryNode" />
-              <item name="compile" type="462c0819:PsiDirectoryNode" />
-              <item name="default-compile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="chatback2" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="test-classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="chatback" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="chatback2" type="b2602c69:ProjectViewProjectNode" />
@@ -600,7 +489,7 @@
       <workItem from="1530302889165" duration="4814000" />
       <workItem from="1531359923052" duration="3753000" />
       <workItem from="1531689498127" duration="3676000" />
-      <workItem from="1531693542458" duration="645000" />
+      <workItem from="1531693542458" duration="1146000" />
     </task>
     <task id="LOCAL-00001" summary="Sadfg">
       <created>1529077706570</created>
@@ -812,7 +701,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531693150202</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="user details retreival">
+      <created>1531694196621</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1531694196621</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -848,7 +744,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53043000" />
+    <option name="totallyTimeSpent" value="53544000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1906" y="0" width="1948" height="2074" extended-state="0" />
@@ -998,8 +894,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/utils/JsonConverter.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/controllers/Messager.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/pojos/converation/Conversation.java" />
     <entry file="uml://SpringLocalModels/module=chatback2">
       <provider selected="true" editor-type-id="UmlEditorProvider">
@@ -1278,50 +1172,50 @@
         <state relative-caret-position="40">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
-            <marker date="1531693875144" expanded="true" signature="84670:84813" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84670:84831" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84670:84844" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84670:84859" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84894:87109" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84907:87094" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84961:85256" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="84980:85241" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85043:85221" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85083:85187" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85104:85165" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85306:85615" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85325:85600" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85402:85580" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85442:85546" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85463:85524" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85666:85931" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85685:85916" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85718:85896" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85758:85862" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85779:85840" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85974:86280" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="85993:86265" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86067:86245" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86107:86211" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86128:86189" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86331:86682" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86350:86667" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86430:86647" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86470:86613" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86491:86591" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86734:87080" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86753:87065" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86867:87045" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86907:87011" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="86928:86989" ph="..." />
-            <marker date="1531693875144" expanded="true" signature="87154:87259" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81756:81798" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81756:81816" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81756:81829" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81756:81844" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81879:84094" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81892:84079" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81946:82241" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="81965:82226" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82028:82206" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82068:82172" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82089:82150" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82291:82600" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82310:82585" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82387:82565" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82427:82531" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82448:82509" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82651:82916" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82670:82901" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82703:82881" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82743:82847" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82764:82825" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82959:83265" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="82978:83250" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83052:83230" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83092:83196" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83113:83174" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83316:83667" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83335:83652" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83415:83632" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83455:83598" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83476:83576" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83719:84065" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83738:84050" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83852:84030" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83892:83996" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="83913:83974" ph="..." />
+            <marker date="1531694602485" expanded="true" signature="84139:84244" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2400">
+        <state relative-caret-position="0">
           <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="64" selection-end-column="25" />
           <folding />
         </state>
@@ -1383,10 +1277,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/firebase-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.travis.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="2" column="8" lean-forward="false" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="7" lean-forward="false" selection-start-line="0" selection-start-column="7" selection-end-line="0" selection-end-column="7" />
           <folding />
         </state>
       </provider>
