@@ -1,6 +1,7 @@
 package com.chatback.broker.database;
 
 
+import com.chatback.pojos.User;
 import com.chatback.pojos.converation.Message;
 
 import java.sql.*;
@@ -36,6 +37,18 @@ public class DatabaseBroker
 
     }
 
+    public void createUserRecord(User user)
+    {
+
+        // This SQL statement produces all table
+        // names and column names in the H2 schema
+        String id = " select count(*) from users;";
+        int index = getID(id);
+
+        String sql = "INSERT INTO users VALUES ('"+index+"','"+user.getUsername()+"','"+user.getAge()+"', '"+user.getGender()+"', '"+user.getGender()+"')";
+
+        ResultSet resultSet = getResult(sql);
+    }
 
     public void setMessages(String gui1, String gui2, Message message)
     {
@@ -48,8 +61,6 @@ public class DatabaseBroker
         String sql = "INSERT INTO messages VALUES ('"+index+"','"+gui1+"','"+gui2+"', '"+message.getText()+"')";
 
         ResultSet resultSet = getResult(sql);
-
-
     }
 
     private int getID(String sql) {
