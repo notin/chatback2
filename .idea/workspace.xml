@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.firebaserc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firebase.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yes/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -31,7 +32,7 @@
       <file leaf-file-name="Messenger.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
+            <state relative-caret-position="1480">
               <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding />
             </state>
@@ -41,7 +42,7 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="409">
+            <state relative-caret-position="2400">
               <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="64" selection-end-column="25" />
               <folding />
             </state>
@@ -52,17 +53,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/sql.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="240">
-              <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="640">
-              <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
+              <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -71,46 +62,46 @@
       <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-6560">
+            <state relative-caret-position="40">
               <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
               <folding>
-                <marker date="1531667030711" expanded="true" signature="89004:89046" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89004:89064" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89004:89077" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89004:89092" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89127:91342" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89140:91327" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89194:89489" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89213:89474" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89276:89454" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89316:89420" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89337:89398" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89539:89848" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89558:89833" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89635:89813" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89675:89779" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89696:89757" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89899:90164" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89918:90149" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89951:90129" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="89991:90095" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90012:90073" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90207:90513" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90226:90498" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90300:90478" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90340:90444" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90361:90422" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90564:90915" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90583:90900" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90663:90880" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90703:90846" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90724:90824" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90967:91313" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="90986:91298" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="91100:91278" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="91140:91244" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="91161:91222" ph="..." />
-                <marker date="1531667030711" expanded="true" signature="91387:91492" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="81697:81923" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="81697:81936" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="81697:81951" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="81699:81905" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="81986:84201" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="81999:84186" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82053:82348" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82072:82333" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82135:82313" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82175:82279" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82196:82257" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82398:82707" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82417:82692" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82494:82672" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82534:82638" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82555:82616" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82758:83023" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82777:83008" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82810:82988" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82850:82954" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="82871:82932" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83066:83372" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83085:83357" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83159:83337" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83199:83303" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83220:83281" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83423:83774" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83442:83759" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83522:83739" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83562:83705" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83583:83683" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83826:84172" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83845:84157" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83959:84137" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="83999:84103" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="84020:84081" ph="..." />
+                <marker date="1531689886926" expanded="true" signature="84246:84351" ph="..." />
               </folding>
             </state>
           </provider>
@@ -119,8 +110,8 @@
       <file leaf-file-name="DatabaseBroker.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+            <state relative-caret-position="973">
+              <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -190,7 +181,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="addUser" />
       </map>
     </option>
   </component>
@@ -261,9 +252,8 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1772" />
-    <option name="y" value="-41" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1906" />
     <option name="width" value="1948" />
     <option name="height" value="2074" />
   </component>
@@ -360,10 +350,10 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -587,6 +577,7 @@
       <workItem from="1530143701493" duration="8908000" />
       <workItem from="1530302889165" duration="4814000" />
       <workItem from="1531359923052" duration="3753000" />
+      <workItem from="1531689498127" duration="564000" />
     </task>
     <task id="LOCAL-00001" summary="Sadfg">
       <created>1529077706570</created>
@@ -813,68 +804,42 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48105000" />
+    <option name="totallyTimeSpent" value="49286000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-16" y="-16" width="3872" height="2092" extended-state="6" />
-    <editor active="true" />
+    <frame x="1906" y="0" width="1948" height="2074" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49683362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46516985" sideWeight="0.5" order="13" side_tool="false" content_ui="combo" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32584918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32984293" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33507854" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24010696" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49683362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45595855" sideWeight="0.5" order="13" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32584918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33390903" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19144385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33915067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39922908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49683362" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3298791" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32584918" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -921,7 +886,8 @@
     <MESSAGE value="test commit" />
     <MESSAGE value="spring" />
     <MESSAGE value="db maybe functioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="db maybe functioning" />
+    <MESSAGE value="user details retreival" />
+    <option name="LAST_COMMIT_MESSAGE" value="user details retreival" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1051,7 +1017,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1214,7 +1179,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1237,7 +1201,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4120">
           <caret line="121" column="0" lean-forward="false" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1246,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
+        <state relative-caret-position="1480">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding />
         </state>
@@ -1291,53 +1254,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-6560">
+        <state relative-caret-position="40">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
-            <marker date="1531667030711" expanded="true" signature="89004:89046" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89004:89064" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89004:89077" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89004:89092" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89127:91342" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89140:91327" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89194:89489" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89213:89474" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89276:89454" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89316:89420" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89337:89398" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89539:89848" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89558:89833" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89635:89813" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89675:89779" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89696:89757" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89899:90164" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89918:90149" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89951:90129" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="89991:90095" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90012:90073" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90207:90513" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90226:90498" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90300:90478" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90340:90444" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90361:90422" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90564:90915" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90583:90900" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90663:90880" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90703:90846" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90724:90824" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90967:91313" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="90986:91298" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="91100:91278" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="91140:91244" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="91161:91222" ph="..." />
-            <marker date="1531667030711" expanded="true" signature="91387:91492" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="81697:81923" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="81697:81936" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="81697:81951" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="81699:81905" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="81986:84201" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="81999:84186" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82053:82348" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82072:82333" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82135:82313" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82175:82279" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82196:82257" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82398:82707" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82417:82692" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82494:82672" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82534:82638" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82555:82616" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82758:83023" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82777:83008" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82810:82988" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82850:82954" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="82871:82932" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83066:83372" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83085:83357" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83159:83337" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83199:83303" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83220:83281" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83423:83774" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83442:83759" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83522:83739" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83562:83705" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83583:83683" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83826:84172" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83845:84157" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83959:84137" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="83999:84103" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="84020:84081" ph="..." />
+            <marker date="1531689886926" expanded="true" signature="84246:84351" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
+        <state relative-caret-position="2400">
           <caret line="60" column="24" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="64" selection-end-column="25" />
           <folding />
         </state>
@@ -1346,7 +1309,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/sql.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
-          <caret line="6" column="30" lean-forward="true" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
+          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -1361,8 +1324,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="67" column="61" lean-forward="false" selection-start-line="67" selection-start-column="61" selection-end-line="67" selection-end-column="61" />
+        <state relative-caret-position="973">
+          <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
           <folding />
         </state>
       </provider>
