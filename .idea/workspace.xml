@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.firebaserc" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/firebase.json" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/yes/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -65,53 +63,83 @@
             <state relative-caret-position="40">
               <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
               <folding>
-                <marker date="1531689886926" expanded="true" signature="81697:81923" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="81697:81936" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="81697:81951" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="81699:81905" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="81986:84201" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="81999:84186" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82053:82348" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82072:82333" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82135:82313" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82175:82279" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82196:82257" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82398:82707" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82417:82692" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82494:82672" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82534:82638" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82555:82616" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82758:83023" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82777:83008" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82810:82988" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82850:82954" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="82871:82932" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83066:83372" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83085:83357" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83159:83337" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83199:83303" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83220:83281" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83423:83774" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83442:83759" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83522:83739" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83562:83705" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83583:83683" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83826:84172" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83845:84157" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83959:84137" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="83999:84103" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="84020:84081" ph="..." />
-                <marker date="1531689886926" expanded="true" signature="84246:84351" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="82933:82993" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="82933:83006" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="82933:83021" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="82933:82975" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83056:85271" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83069:85256" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83123:83418" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83142:83403" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83205:83383" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83245:83349" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83266:83327" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83468:83777" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83487:83762" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83564:83742" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83604:83708" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83625:83686" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83828:84093" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83847:84078" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83880:84058" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83920:84024" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="83941:84002" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84136:84442" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84155:84427" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84229:84407" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84269:84373" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84290:84351" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84493:84844" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84512:84829" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84592:84809" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84632:84775" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84653:84753" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84896:85242" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="84915:85227" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="85029:85207" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="85069:85173" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="85090:85151" ph="..." />
+                <marker date="1531691882717" expanded="true" signature="85316:85421" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DatabaseBroker.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DatabaseBroker.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="973">
               <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="firebase.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/firebase.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".firebaserc" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.firebaserc">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserManager.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="698">
+              <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -122,26 +150,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="160">
               <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Response.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Response.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SQLscripts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/SQLscripts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -223,8 +231,8 @@
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/sql.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" />
       </list>
     </option>
   </component>
@@ -577,7 +585,7 @@
       <workItem from="1530143701493" duration="8908000" />
       <workItem from="1530302889165" duration="4814000" />
       <workItem from="1531359923052" duration="3753000" />
-      <workItem from="1531689498127" duration="564000" />
+      <workItem from="1531689498127" duration="2458000" />
     </task>
     <task id="LOCAL-00001" summary="Sadfg">
       <created>1529077706570</created>
@@ -768,7 +776,14 @@
       <option name="project" value="LOCAL" />
       <updated>1531666654061</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="user details retreival">
+      <created>1531690078910</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1531690078910</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -804,7 +819,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49286000" />
+    <option name="totallyTimeSpent" value="51180000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1906" y="0" width="1948" height="2074" extended-state="0" />
@@ -820,10 +835,10 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33915067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33915067" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39922908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39922908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994652" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -953,14 +968,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/encodings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/pojos/converation/Log.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/start/start.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/pojos/converation/ResponsesItem.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback21/utils/JsonConverter.java" />
@@ -1257,43 +1264,43 @@
         <state relative-caret-position="40">
           <caret line="1" column="21" lean-forward="false" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
           <folding>
-            <marker date="1531689886926" expanded="true" signature="81697:81923" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="81697:81936" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="81697:81951" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="81699:81905" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="81986:84201" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="81999:84186" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82053:82348" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82072:82333" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82135:82313" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82175:82279" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82196:82257" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82398:82707" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82417:82692" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82494:82672" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82534:82638" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82555:82616" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82758:83023" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82777:83008" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82810:82988" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82850:82954" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="82871:82932" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83066:83372" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83085:83357" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83159:83337" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83199:83303" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83220:83281" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83423:83774" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83442:83759" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83522:83739" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83562:83705" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83583:83683" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83826:84172" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83845:84157" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83959:84137" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="83999:84103" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="84020:84081" ph="..." />
-            <marker date="1531689886926" expanded="true" signature="84246:84351" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="82933:82993" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="82933:83006" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="82933:83021" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="82933:82975" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83056:85271" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83069:85256" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83123:83418" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83142:83403" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83205:83383" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83245:83349" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83266:83327" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83468:83777" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83487:83762" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83564:83742" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83604:83708" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83625:83686" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83828:84093" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83847:84078" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83880:84058" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83920:84024" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="83941:84002" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84136:84442" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84155:84427" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84229:84407" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84269:84373" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84290:84351" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84493:84844" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84512:84829" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84592:84809" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84632:84775" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84653:84753" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84896:85242" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="84915:85227" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="85029:85207" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="85069:85173" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="85090:85151" ph="..." />
+            <marker date="1531691882717" expanded="true" signature="85316:85421" ph="..." />
           </folding>
         </state>
       </provider>
@@ -1314,18 +1321,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="34" column="39" lean-forward="false" selection-start-line="34" selection-start-column="39" selection-end-line="34" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="973">
           <caret line="81" column="61" lean-forward="false" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/firebase.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.firebaserc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="698">
+          <caret line="35" column="5" lean-forward="false" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
           <folding />
         </state>
       </provider>

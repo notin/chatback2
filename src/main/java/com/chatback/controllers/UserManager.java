@@ -34,5 +34,4 @@ public class UserManager
         DatabaseBroker databaseBroker = new DatabaseBroker();
         return databaseBroker.getUserDetails(username);
     }
-
 }
