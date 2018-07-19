@@ -1,4 +1,4 @@
-package com.chatback.pojos;
+package com.chatback.pojos.user;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;

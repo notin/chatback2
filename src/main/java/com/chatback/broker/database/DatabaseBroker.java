@@ -1,7 +1,7 @@
 package com.chatback.broker.database;
 
 
-import com.chatback.pojos.User;
+import com.chatback.pojos.user.User;
 import com.chatback.pojos.converation.Message;
 
 import java.sql.*;
