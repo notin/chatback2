@@ -7,3 +7,12 @@ gender VARCHAR(50) NOT NULL,
 preferedGenderOfPartner VARCHAR(50) NOT NULL,
 PRIMARY KEY (username))
 
+
+
+CREATE TABLE propmpts(
+   id              INTEGER  NOT NULL PRIMARY KEY
+  ,title           VARCHAR(18) NOT NULL
+  ,userInteraction VARCHAR(4) NOT NULL
+  ,instruction     VARCHAR(25) NOT NULL
+  ,output         VARCHAR(24) NOT NULL
+);
