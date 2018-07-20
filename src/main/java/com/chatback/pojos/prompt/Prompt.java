@@ -5,16 +5,72 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.annotation.Generated;
 
 @Generated("com.robohorse.robopojogenerator")
-public class Prompt{
+public class Prompt {
 
-	@JsonProperty("prompt")
-	private List<PromptItem> prompt;
+	@JsonProperty("instruction")
+	private String instruction;
+
+	@JsonProperty("output")
+	private List<String> leadin;
+
+	@JsonProperty("id")
+	private int id;
+
+	@JsonProperty("title")
+	private String title;
+
+	@JsonProperty("userInteraction")
+	private String userInteraction;
+
+	public void setInstruction(String instruction){
+		this.instruction = instruction;
+	}
+
+	public String getInstruction(){
+		return instruction;
+	}
+
+	public void setLeadin(List<String> leadin){
+		this.leadin = leadin;
+	}
+
+	public List<String> getLeadin(){
+		return leadin;
+	}
+
+	public void setId(int id){
+		this.id = id;
+	}
+
+	public int getId(){
+		return id;
+	}
+
+	public void setTitle(String title){
+		this.title = title;
+	}
+
+	public String getTitle(){
+		return title;
+	}
+
+	public void setUserInteraction(String userInteraction){
+		this.userInteraction = userInteraction;
+	}
+
+	public String getUserInteraction(){
+		return userInteraction;
+	}
 
 	@Override
  	public String toString(){
 		return 
-			"Prompt{" + 
-			"prompt = '" + prompt + '\'' + 
+			"Prompt{" +
+			"instruction = '" + instruction + '\'' + 
+			",leadin = '" + leadin + '\'' + 
+			",id = '" + id + '\'' + 
+			",title = '" + title + '\'' + 
+			",userInteraction = '" + userInteraction + '\'' + 
 			"}";
 		}
 }

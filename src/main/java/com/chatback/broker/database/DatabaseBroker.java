@@ -1,6 +1,7 @@
 package com.chatback.broker.database;
 
 
+import com.chatback.pojos.prompt.Prompts;
 import com.chatback.pojos.user.User;
 import com.chatback.pojos.converation.Message;
 
@@ -34,6 +35,27 @@ public class DatabaseBroker
             e.printStackTrace();
         }
     return m;
+
+    }
+
+    public Prompts getPropmpts()
+    {
+        Prompts m = null;
+        // This SQL statement produces all table
+        // names and column names in the H2 schema
+
+        String sql = "select conversation from prompt where id = ";
+
+        ResultSet resultSet = null;
+        try {
+            resultSet = connectToDatabase(sql);
+            if (resultSet.next()) {
+                //TODO: make table and connect
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return m;
 
     }
 
