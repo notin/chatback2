@@ -23,7 +23,7 @@ public class JsonConverter
         }
         catch (Exception e)
         {
-            com.sun.istack.internal.logging.Logger.getLogger(this.getClass()).info(e.getMessage());
+           Logger.getAnonymousLogger().info(e.getMessage());
         }
         return response;
     }
