@@ -1,0 +1,34 @@
+{
+  "prompt": [
+
+    {
+      "id" : 3,
+      "title": "feeling",
+      "userInteraction" : "type",
+      "instruction": "state how you are feeling",
+      "leadin": [
+        "I am feeling..."
+      ]
+    },
+
+    {
+      "id" : 3,
+      "title": "respond to partner",
+      "userInteraction" : "type",
+      "instruction": "respond to your partner",
+      "leadin": [
+        "I feel you are..."
+      ]
+    },
+
+    {
+      "id" : 3,
+      "title": "compose self",
+      "userInteraction" : "type",
+      "instruction": "compose yourself",
+      "leadin": [
+        "I am composing myself..."
+      ]
+    }
+  ]
+}

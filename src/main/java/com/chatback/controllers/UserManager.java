@@ -1,14 +1,9 @@
 package com.chatback.controllers;
 
 import com.chatback.broker.database.DatabaseBroker;
-import com.chatback.pojos.User;
-import com.chatback.pojos.converation.Conversation;
-import com.chatback.pojos.converation.Message;
+import com.chatback.pojos.user.User;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 import java.util.logging.Logger;
 
 @RestController

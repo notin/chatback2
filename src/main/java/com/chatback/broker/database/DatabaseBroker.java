@@ -1,10 +1,14 @@
 package com.chatback.broker.database;
 
 
-import com.chatback.pojos.User;
+import com.chatback.pojos.prompt.Prompt;
+import com.chatback.pojos.prompt.Prompts;
+import com.chatback.pojos.user.User;
 import com.chatback.pojos.converation.Message;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.logging.Logger;
 
 import static java.sql.DriverManager.getConnection;
@@ -35,6 +39,39 @@ public class DatabaseBroker
         }
     return m;
 
+    }
+
+    public List<Prompt> getPrompts()
+    {
+        List<Prompt> prompts = new ArrayList<>();
+        // This SQL statement produces all table
+        // names and column names in the H2 schema
+
+        String sql = "select * from prompts";
+
+        ResultSet resultSet = null;
+        try
+        {
+            resultSet = connectToDatabase(sql);
+            while(resultSet.next())
+            {
+                Prompt prompt = new Prompt();
+                prompt.setId(resultSet.getInt(1));
+                prompt.setTitle(resultSet.getString(2));
+                prompt.setUserInteraction(resultSet.getString(3));
+                prompt.setInstruction(resultSet.getString(4));
+                String string = resultSet.getString(5);
+                List<String> strings = new ArrayList<>();
+                strings.add(string);
+                prompt.setOutput(strings);
+
+                prompts.add(prompt);
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return prompts;
     }
 
     public void createUserRecord(User user)
