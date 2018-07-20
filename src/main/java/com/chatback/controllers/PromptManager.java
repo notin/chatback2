@@ -1,20 +1,17 @@
 package com.chatback.controllers;
 
 import com.chatback.broker.database.DatabaseBroker;
-import com.chatback.pojos.converation.Conversation;
-import com.chatback.pojos.converation.Message;
+import com.chatback.pojos.prompt.Prompt;
 import com.chatback.pojos.prompt.Prompts;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 @RestController
 public class PromptManager
 {
 
-    @RequestMapping(value = "propmts", method = RequestMethod.GET)
+    @RequestMapping(value = "prompts", method = RequestMethod.GET)
     public Prompts retrieve()
     {
         Prompts conversation = getConversation();
@@ -24,7 +21,11 @@ public class PromptManager
     {
         //TODO:Call db
         DatabaseBroker databaseBroker = new DatabaseBroker();
-        return databaseBroker.getPropmpts();
+
+        List<Prompt> prompts = databaseBroker.getPrompts();
+        Prompts p = Prompts.builder().build();
+        p.setPrompt(prompts);
+        return p;
     }
 
 }

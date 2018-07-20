@@ -30,7 +30,7 @@ public class Prompt {
 		return instruction;
 	}
 
-	public void setLeadin(List<String> leadin){
+	public void setOutput(List<String> leadin){
 		this.leadin = leadin;
 	}
 

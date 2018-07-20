@@ -9,10 +9,11 @@ PRIMARY KEY (username))
 
 
 
-CREATE TABLE propmpts(
+CREATE TABLE prompts(
    id              INTEGER  NOT NULL PRIMARY KEY
   ,title           VARCHAR(18) NOT NULL
   ,userInteraction VARCHAR(4) NOT NULL
   ,instruction     VARCHAR(25) NOT NULL
   ,output         VARCHAR(24) NOT NULL
 );
+
