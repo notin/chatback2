@@ -15,18 +15,17 @@ public class UserManager
     {
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
-        //TODO:Call db
-        DatabaseBroker databaseBroker = new DatabaseBroker();
 
+        DatabaseBroker databaseBroker = new DatabaseBroker();
         databaseBroker.createUserRecord(user);
     }
     @RequestMapping(value = "users", method = RequestMethod.GET)
-    public User retrieveUser(@RequestParam(defaultValue = "test") String username)
+    public User retrieveUser(@RequestParam(defaultValue = "12") String uid)
     {
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
-        //TODO:Call db
+
         DatabaseBroker databaseBroker = new DatabaseBroker();
-        return databaseBroker.getUserDetails(username);
+        return databaseBroker.getUserDetails(uid);
     }
 }
