@@ -81,8 +81,11 @@ public class DatabaseBroker
         String id = " select count(*) from users;";
         int index = getID(id);
 
-        String sql = "INSERT INTO users VALUES ('"+user.getUsername()+"','"+user.getAge()+"', '"+user.getGender()+"', '"+user.getGender()+"')";
-
+        String sql = "INSERT INTO users VALUES ('"+user.getUsername()+"','"+
+                                                user.getAge()+"', '"+
+                                                user.getGender()+"', '"+
+                                                user.getGender()+"', '"+
+                                                user.getUid()+"')";
         ResultSet resultSet = getResult(sql);
     }
 
@@ -91,7 +94,7 @@ public class DatabaseBroker
         // This SQL statement produces all table
         // names and column names in the H2 schema
 
-        String sql = "SELECT * from users where username = '"+username+"';";
+        String sql = "SELECT * from users where uid = '"+username+"';";
         ResultSet resultSet = null;
         User user = null;
         try
@@ -103,12 +106,14 @@ public class DatabaseBroker
                 int age = resultSet.getInt(2);
                 String gender = resultSet.getString(3);
                 String preferedGender = resultSet.getString(4);
+                String uid = resultSet.getString(5);
 
                 user = User.builder().build();
-                user.setUsername(username);
+                user.setUsername(userName);
                 user.setAge(age);
                 user.setGender(gender);
                 user.setPreferedGenderOfPartner(preferedGender);
+                user.setUid(uid);
             }
         } catch (Exception e) {
             e.printStackTrace();

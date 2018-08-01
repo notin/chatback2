@@ -22,6 +22,9 @@ public class User{
 	@JsonProperty("username")
 	private String username;
 
+	@JsonProperty("uid")
+	private String uid;
+
 	@Override
  	public String toString(){
 		return 
@@ -29,7 +32,8 @@ public class User{
 			"gender = '" + gender + '\'' + 
 			",preferedGenderOfPartner = '" + preferedGenderOfPartner + '\'' + 
 			",age = '" + age + '\'' + 
-			",username = '" + username + '\'' + 
+			",username = '" + username + '\'' +
+			",uid = '" + uid + '\'' +
 			"}";
 		}
 }
