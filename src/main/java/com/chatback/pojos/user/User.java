@@ -32,7 +32,8 @@ public class User{
 			"gender = '" + gender + '\'' + 
 			",preferedGenderOfPartner = '" + preferedGenderOfPartner + '\'' + 
 			",age = '" + age + '\'' + 
-			",username = '" + username + '\'' + 
+			",username = '" + username + '\'' +
+			",uid = '" + uid + '\'' +
 			"}";
 		}
 }

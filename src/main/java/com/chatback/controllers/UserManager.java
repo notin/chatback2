@@ -19,6 +19,8 @@ public class UserManager
         DatabaseBroker databaseBroker = new DatabaseBroker();
         databaseBroker.createUserRecord(user);
     }
+
+
     @RequestMapping(value = "users", method = RequestMethod.GET)
     public User retrieveUser(@RequestParam(defaultValue = "12") String uid)
     {

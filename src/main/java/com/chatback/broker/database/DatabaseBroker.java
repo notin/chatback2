@@ -81,7 +81,11 @@ public class DatabaseBroker
         String id = " select count(*) from users;";
         int index = getID(id);
 
-        String sql = "INSERT INTO users VALUES ('"+user.getUsername()+"','"+user.getAge()+"', '"+user.getGender()+"', '"+user.getGender()+"', '"+user.getUid()+");";
+        String sql = "INSERT INTO users VALUES ('"+user.getUsername()+"','"+
+                                                user.getAge()+"', '"+
+                                                user.getGender()+"', '"+
+                                                user.getGender()+"', '"+
+                                                user.getUid()+"')";
         ResultSet resultSet = getResult(sql);
     }
 
