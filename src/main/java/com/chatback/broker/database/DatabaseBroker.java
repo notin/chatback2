@@ -129,6 +129,10 @@ public class DatabaseBroker
         ResultSet resultSet = getResult(sql);
     }
 
+
+
+
+
     private int getID(String sql) {
         ResultSet resultSet = null;
         int index =-1;
