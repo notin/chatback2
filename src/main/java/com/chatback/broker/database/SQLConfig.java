@@ -1,7 +1,5 @@
 package com.chatback.broker.database;
 
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
@@ -13,7 +11,7 @@ public class SQLConfig
     private static Properties prop = new Properties();
     protected static String getProperty(String key)
     {
-        String property =null;
+        String property = null;
         Properties prop = new Properties();
         InputStream resourceAsStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
         OutputStream output = null;
