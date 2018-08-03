@@ -28,5 +28,4 @@ public class PromptManager extends Controller
         p.setPrompt(prompts);
         return p;
     }
-
 }
