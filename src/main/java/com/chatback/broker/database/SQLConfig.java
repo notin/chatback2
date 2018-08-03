@@ -39,9 +39,9 @@ public class SQLConfig
         InputStream inputStream;
         switch (Controller.IP)
         {
-            case "192.168.0.15":
-                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
-                break;
+//            case "192.168.0.15":
+//                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
+//                break;
 
             default:
                 inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
