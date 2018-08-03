@@ -36,17 +36,14 @@ public class SQLConfig
 
     private static InputStream getResourceAsStream()
     {
-        InputStream inputStream;
-        switch (Controller.IP)
+        InputStream inputStream = null;
+        if (Controller.IP.equalsIgnoreCase( "192.168.0.15"))
         {
-//            case "192.168.0.15":
-//                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
-//                break;
-
-            default:
-                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
-
-
+                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
+        }
+        else if (Controller.IP.equalsIgnoreCase("172.17.180.254"))
+        {
+            inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
         }
         return inputStream;
     }
