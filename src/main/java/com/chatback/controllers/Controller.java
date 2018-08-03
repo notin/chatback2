@@ -5,9 +5,10 @@ import java.net.InetAddress;
 
 public class Controller {
 
-    private static final String ip = getIP();
+    public static final String IP = getLocalIP();
 
-    private static final String getIP() {
+    private static final String getLocalIP()
+    {
         String localip = null;
 
         try (final DatagramSocket socket = new DatagramSocket()) {

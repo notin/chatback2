@@ -1,5 +1,7 @@
 package com.chatback.broker.database;
 
+import com.chatback.controllers.Controller;
+
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
@@ -13,7 +15,7 @@ public class SQLConfig
     {
         String property = null;
         Properties prop = new Properties();
-        InputStream resourceAsStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
+        InputStream resourceAsStream = getResourceAsStream();
         OutputStream output = null;
 
         InputStream input = null;
@@ -31,6 +33,24 @@ public class SQLConfig
         }
         return property;
     }
+
+    private static InputStream getResourceAsStream()
+    {
+        InputStream inputStream;
+        switch (Controller.IP)
+        {
+            case "192.168.0.15":
+                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
+                break;
+
+            default:
+                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
+
+
+        }
+        return inputStream;
+    }
+
     public static final String URL= getProperty("url");
     public static final String PORT= getProperty("port");
     public static final String USER= getProperty("user");
