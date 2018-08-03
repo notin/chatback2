@@ -33,5 +33,4 @@ public class SystemInfo extends com.chatback.controllers.Controller
         dbConnection.setIsConnected(databaseBroker.testConnection());
         return dbConnection;
     }
-
 }
