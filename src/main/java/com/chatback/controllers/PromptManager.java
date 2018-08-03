@@ -12,7 +12,6 @@ import java.util.List;
 @RestController
 public class PromptManager extends Controller
 {
-
     @RequestMapping(value = "prompts", method = RequestMethod.GET)
     public Prompts retrieve()
     {
