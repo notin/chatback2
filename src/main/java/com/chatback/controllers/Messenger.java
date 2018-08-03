@@ -11,7 +11,7 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
-public class Messenger
+public class Messenger extends Controller
 {
     @RequestMapping(value = "chat", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody

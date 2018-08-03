@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.logging.Logger;
 
 @RestController
-public class UserManager
+public class UserManager extends Controller
 {
     @RequestMapping(value = "users", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
