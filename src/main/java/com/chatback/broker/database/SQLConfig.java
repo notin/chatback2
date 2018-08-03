@@ -41,7 +41,7 @@ public class SQLConfig
         {
                 inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
         }
-        else if (Controller.IP.equalsIgnoreCase("172.17.180.254"))
+        else if (Controller.IP.equalsIgnoreCase("172.19.96.118"))
         {
             inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
         }
