@@ -5,48 +5,39 @@ import com.chatback.controllers.Controller;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.Properties;
+import java.util.logging.Logger;
 
 
 public class SQLConfig
 {
-
-    private static Properties prop = new Properties();
     protected static String getProperty(String key)
     {
         String property = null;
         Properties prop = new Properties();
         InputStream resourceAsStream = getResourceAsStream();
-        OutputStream output = null;
 
-        InputStream input = null;
-
-        try {
-
-//            input = new FileInputStream("sql.properties");
-
-            // load a properties file
+        try
+        {
             prop.load(resourceAsStream);
-             property = prop.getProperty(key);
+            property = prop.getProperty(key);
         }
         catch (Exception e)
         {
+            Logger.getAnonymousLogger().info(e.getMessage());
         }
         return property;
     }
 
     private static InputStream getResourceAsStream()
     {
-        InputStream inputStream;
-        switch (Controller.IP)
+        InputStream inputStream = null;
+        if (Controller.IP.equalsIgnoreCase( "192.168.0.15"))
         {
-            case "192.168.0.15":
                 inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("sql.properties");
-                break;
-
-            default:
-                inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
-
-
+        }
+        else if (Controller.IP.startsWith("172"))
+        {
+            inputStream = ClassLoader.getSystemClassLoader().getResourceAsStream("herokusql.properties");
         }
         return inputStream;
     }

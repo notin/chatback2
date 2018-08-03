@@ -18,6 +18,7 @@ public class PromptManager extends Controller
         Prompts conversation = getConversation();
         return conversation;
     }
+
     private Prompts getConversation()
     {
         //TODO:Call db
