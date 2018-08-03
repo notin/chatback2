@@ -162,14 +162,34 @@ public class DatabaseBroker
 
     private ResultSet connectToDatabase(String sql) throws Exception
     {
-        ResultSet set = null;
-        Class.forName(SQLConfig.DRIVER);
-        Connection c = DriverManager.getConnection(
-                SQLConfig.JDBC+"://"+SQLConfig.URL+":"+SQLConfig.PORT+"/"+SQLConfig.DATABASE, SQLConfig.USER, SQLConfig.PASSWORD);
+        Connection c = getConnection();
+        ResultSet set;
         Statement statement = c.createStatement();
         set = statement.executeQuery(sql);
-
         return set;
+    }
+
+    public boolean testConnection()
+    {
+        boolean valid =false;
+        try
+        {
+             valid = getConnection().isValid(5000);
+        }
+        catch (SQLException e)
+        {
+            e.printStackTrace();
+        } catch (ClassNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        return valid;
+    }
+
+    private Connection getConnection() throws ClassNotFoundException, SQLException {
+        ResultSet set = null;
+        Class.forName(SQLConfig.DRIVER);
+        return DriverManager.getConnection(SQLConfig.JDBC+"://"+SQLConfig.URL+":"+SQLConfig.PORT+"/"+SQLConfig.DATABASE, SQLConfig.USER, SQLConfig.PASSWORD);
     }
 
 }
