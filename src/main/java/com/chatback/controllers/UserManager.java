@@ -1,7 +1,8 @@
 package com.chatback.controllers;
 
-import com.chatback.broker.database.DatabaseBroker;
 import com.chatback.pojos.user.User;
+import com.chatback.pojos.user.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.logging.Logger;
@@ -9,6 +10,10 @@ import java.util.logging.Logger;
 @RestController
 public class UserManager extends Controller
 {
+
+    @Autowired
+    private UserService userService;
+
     @RequestMapping(value = "users", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
     public void createUser(@RequestBody User user)
@@ -16,8 +21,7 @@ public class UserManager extends Controller
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
 
-        DatabaseBroker databaseBroker = new DatabaseBroker();
-        databaseBroker.createUserRecord(user);
+        userService.saveUser(user);
     }
 
 
@@ -27,7 +31,6 @@ public class UserManager extends Controller
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
 
-        DatabaseBroker databaseBroker = new DatabaseBroker();
-        return databaseBroker.getUserDetails(uid);
+        return userService.findUserByUId(uid);
     }
 }
