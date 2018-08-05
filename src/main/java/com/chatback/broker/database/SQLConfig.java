@@ -42,13 +42,13 @@ public class SQLConfig
         return inputStream;
     }
 
-    public static final String URL= getProperty("url");
-    public static final String PORT= getProperty("port");
-    public static final String USER= getProperty("user");
-    public static final String PASSWORD= getProperty("password");
-    public static final String DATABASE= getProperty("db");
-    public static final String JDBC= getProperty("jdbc");
-    public static final String DRIVER= getProperty("driver");
+    public static final String URL = "if0ck476y7axojpg.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
+    public static final String PORT = "3306";
+    public static final String USER = "ps1gvzc08kc0w43m";
+    public static final String PASSWORD = "okyne5mslj3lhvdh";
+    public static final String DATABASE = "m8jvzarz997wp3wj";
+    public static final String JDBC = "jdbc=jdbc:mariadb";
+    public static final String DRIVER = "org.mariadb.jdbc.Driver";
 
 
 }
