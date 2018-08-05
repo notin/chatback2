@@ -3,12 +3,22 @@ package com.chatback.pojos.user;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
 
 import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Data
 @Builder
-public class User{
+@Entity
+@ToString
+public class User
+{
+
+	@Id
+	@JsonProperty("id")
+	private String id;
 
 	@JsonProperty("gender")
 	private String gender;
@@ -24,16 +34,4 @@ public class User{
 
 	@JsonProperty("uid")
 	private String uid;
-
-	@Override
- 	public String toString(){
-		return 
-			"User{" + 
-			"gender = '" + gender + '\'' + 
-			",preferedGenderOfPartner = '" + preferedGenderOfPartner + '\'' + 
-			",age = '" + age + '\'' + 
-			",username = '" + username + '\'' +
-			",uid = '" + uid + '\'' +
-			"}";
-		}
 }
