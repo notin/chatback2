@@ -10,9 +10,9 @@ spring:
   datasource:
     platform: mariadb
     driverClassName: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://a5s42n4idx9husyc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/cv9x6scph8axrjbg
-    username: mv14dwq8d8bi7rhg
-    password: q4phrgo5ha620ope
+    url: jdbc:mariadb://bfjrxdpxrza9qllq.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/h885dsv04ardvjej
+    username: di3legxw7wty6s27
+    password: kt9mg5e3v5utduh0
     autoReconnect: true
 
   logging:
