@@ -14,7 +14,6 @@ import javax.persistence.Id;
 @Builder
 @Entity
 @ToString
-@JsonIgnoreProperties(ignoreUnknown = true)
 public class Message
 {
 

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Logger;
 
 @RestController
 public class Messenger extends Controller
@@ -20,6 +21,7 @@ public class Messenger extends Controller
     @ResponseBody
     public void receive(@RequestBody  Conversation conversation)
     {
+        Logger.getAnonymousLogger().info(conversation.toString());
         List<Message> messages = conversation.getMessage();
         //TODO:Call db
 
