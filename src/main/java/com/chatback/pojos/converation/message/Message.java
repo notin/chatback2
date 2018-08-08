@@ -22,12 +22,15 @@ public class Message
 	@JsonProperty("id")
 	private String id;
 
-	@JsonProperty("text")
-	private String gender;
+	@JsonProperty("t")
+	private String t;
 
-	@JsonProperty("from")
-	private String preferedGenderOfPartner;
+	@JsonProperty("f")
+	private String f;
 
-	@JsonProperty("to")
-	private int age;
+	@JsonProperty("contents")
+	private int contents;
+
+	@JsonProperty("time")
+	private int time;
 }

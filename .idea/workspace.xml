@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="changing to just chaeck for start for remote run">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/MessageRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/MessageService.java" afterDir="false" />
+    <list default="true" id="e4cb6859-8755-43a6-b221-9cdea52e7ddd" name="Default" comment="changing to make convo work">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/broker/database/DatabaseBroker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/PromptManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/PromptController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/SystemInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/SystemInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -78,8 +70,8 @@
             <file pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/resources/Conversation.json">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="153">
-                    <caret line="21" column="11" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="11" />
+                  <state>
+                    <caret line="9" column="20" lean-forward="true" selection-end-line="33" selection-end-column="1" />
                   </state>
                 </provider>
               </entry>
@@ -107,31 +99,36 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="SQLscripts" value="1" />
-          <entry key="java" value="19" />
+          <entry key="class" value="1" />
+          <entry key="java" value="20" />
           <entry key="json" value="2" />
           <entry key="properties" value="1" />
           <entry key="sql" value="1" />
+          <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="19" />
+          <entry key="CLASS" value="1" />
+          <entry key="JAVA" value="20" />
           <entry key="JSON" value="2" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="1" />
           <entry key="SQL" value="1" />
+          <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="35" />
-          <entry key="java" value="180" />
+          <entry key="java" value="246" />
+          <entry key="txt" value="32" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="180" />
-          <entry key="PLAIN_TEXT" value="35" />
+          <entry key="JAVA" value="246" />
+          <entry key="PLAIN_TEXT" value="67" />
         </counts>
       </usages-collector>
     </session>
@@ -141,20 +138,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="17" column="20" lean-forward="true" selection-end-line="32" selection-end-column="1" />
+            <state relative-caret-position="231">
+              <caret line="32" selection-start-line="32" selection-end-line="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/MessageRepository.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
             </state>
           </provider>
         </entry>
@@ -168,11 +162,29 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
+            <state relative-caret-position="272">
               <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="111">
+              <caret line="127" selection-start-line="127" selection-end-line="127" />
             </state>
           </provider>
         </entry>
@@ -198,41 +210,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+            <state relative-caret-position="111">
+              <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/PromptController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/SystemInfo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="120">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -318,10 +306,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/PromptController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/SystemInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/MessageRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java" />
       </list>
     </option>
   </component>
@@ -513,7 +501,7 @@
     <property name="SearchEverywhereHistoryKey" value="driver&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/sql/DriverManager.java&#10;getStream&#9;PSI&#9;JAVA://com.chatback.broker.database.SQLConfig#getResourceAsStream" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533699147827" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1533701133892" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../testHarness" />
     <property name="project.structure.last.edited" value="Project" />
@@ -674,7 +662,7 @@
       <workItem from="1531884820666" duration="1164000" />
       <workItem from="1533080920985" duration="200000" />
       <workItem from="1533081280309" duration="1642000" />
-      <workItem from="1533694019317" duration="4927000" />
+      <workItem from="1533694019317" duration="6808000" />
     </task>
     <task id="LOCAL-00001" summary="Sadfg">
       <created>1529077706570</created>
@@ -970,7 +958,14 @@
       <option name="project" value="LOCAL" />
       <updated>1533616715529</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="changing to make convo work">
+      <created>1533699207053</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1533699207053</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1006,14 +1001,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71606000" />
+    <option name="totallyTimeSpent" value="73487000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.288" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.288" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1029,13 +1023,13 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Spring" order="7" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.33909038" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.329718" />
-      <window_info anchor="bottom" content_ui="combo" id="Run Dashboard" order="13" visible="true" weight="0.55748373" />
+      <window_info active="true" anchor="bottom" content_ui="combo" id="Run Dashboard" order="13" visible="true" weight="0.55748373" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -1102,7 +1096,8 @@
     <MESSAGE value="change to if statement" />
     <MESSAGE value="chanaging ip" />
     <MESSAGE value="changing to just chaeck for start for remote run" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing to just chaeck for start for remote run" />
+    <MESSAGE value="changing to make convo work" />
+    <option name="LAST_COMMIT_MESSAGE" value="changing to make convo work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,16 +1108,74 @@
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java</url>
+          <line>31</line>
+          <properties />
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java</url>
+          <line>22</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
     </breakpoint-manager>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>ObjectMapper mapper = new ObjectMapper();
+
+
+//Object to JSON in f
+
+//Object to JSON in String
+String jsonInString = mapper.writeValueAsString(Message.builder().build());</expression-string>
+        <language-id>JAVA</language-id>
+        <custom-info>com.fasterxml.jackson.databind.ObjectMapper</custom-info>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+    </expressions>
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>JsonifMessage.builder().build().toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Message.builder().build().toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>Message.builder().build()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>conversation</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>conversation.toString()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_6.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_6.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1285,13 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1853">
-          <caret line="127" selection-start-line="127" selection-end-line="127" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/user/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1313,13 +1359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="62" selection-end-line="194" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
         </state>
       </provider>
     </entry>
@@ -1416,41 +1455,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/Conversation.json">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="272">
+          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="17" column="20" lean-forward="true" selection-end-line="32" selection-end-column="1" />
+        <state relative-caret-position="68">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.7.RELEASE/spring-web-5.0.7.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="127" selection-start-line="127" selection-end-line="127" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/Conversation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="27" column="33" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="33" />
+        <state relative-caret-position="111">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/Conversation.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="9" column="20" lean-forward="true" selection-end-line="33" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="81" selection-start-line="12" selection-start-column="81" selection-end-line="12" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/pojos/converation/message/Message.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/Messenger.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="120">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/chatback/controllers/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="21" column="41" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
         </state>
       </provider>
     </entry>
