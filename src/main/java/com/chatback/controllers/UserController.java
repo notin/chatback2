@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.logging.Logger;
 
 @RestController
-public class UserManager extends Controller
+public class UserController extends Controller
 {
 
     @Autowired
