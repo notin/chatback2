@@ -29,7 +29,6 @@ public class MessageController extends Controller
 
         int index = messages.size()-1;
         messageService.saveAllMessages(messages);
-
     }
 
     @CrossOrigin
