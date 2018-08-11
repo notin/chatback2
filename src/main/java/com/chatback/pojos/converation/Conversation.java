@@ -26,12 +26,12 @@ public class Conversation
 
 	@JsonProperty("response")
 	@OneToMany
-	@JoinColumn(name = "response")
+//	@JoinColumn(name = "response")
 	private List<Response> response = new ArrayList<>();
 
 	@JsonProperty("message")
 	@OneToMany
-	@JoinColumn(name = "id", referencedColumnName = "id")
+//	@JoinColumn(name = "id", referencedColumnName = "id")
 	@Cascade(org.hibernate.annotations.CascadeType.ALL)
 	private List<Message> message = new ArrayList<>();
 

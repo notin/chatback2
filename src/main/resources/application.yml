@@ -4,7 +4,7 @@ spring:
     show-sql: false
     hibernate:
       dll: true
-      ddl-auto: update
+      ddl-auto: create
     properties:
       hibernate:
         dialect: org.hibernate.dialect.MySQL5InnoDBDialect
@@ -15,6 +15,7 @@ spring:
     username: di3legxw7wty6s27
     password: kt9mg5e3v5utduh0
     autoReconnect: true
+    maxActive: 500
 
   logging:
     level: DEBUG

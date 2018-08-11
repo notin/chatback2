@@ -2,17 +2,25 @@ package com.chatback.pojos.prompt;
 
 import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import javax.annotation.Generated;
+import lombok.Builder;
+import lombok.Data;
 
-@Generated("com.robohorse.robopojogenerator")
+import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Data
+@Builder
+@Entity
 public class Prompt {
 
 	@JsonProperty("instruction")
 	private String instruction;
 
 	@JsonProperty("output")
-	private List<String> leadin;
+	private String leadin;
 
+	@Id
 	@JsonProperty("id")
 	private int id;
 
@@ -30,11 +38,11 @@ public class Prompt {
 		return instruction;
 	}
 
-	public void setOutput(List<String> leadin){
+	public void setOutput(String leadin){
 		this.leadin = leadin;
 	}
 
-	public List<String> getLeadin(){
+	public String getLeadin(){
 		return leadin;
 	}
 
@@ -62,15 +70,4 @@ public class Prompt {
 		return userInteraction;
 	}
 
-	@Override
- 	public String toString(){
-		return 
-			"Prompt{" +
-			"instruction = '" + instruction + '\'' + 
-			",leadin = '" + leadin + '\'' + 
-			",id = '" + id + '\'' + 
-			",title = '" + title + '\'' + 
-			",userInteraction = '" + userInteraction + '\'' + 
-			"}";
-		}
 }

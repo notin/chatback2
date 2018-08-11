@@ -1,6 +1,7 @@
 package com.chatback.controllers;
 
 import com.chatback.pojos.converation.Conversation;
+import com.chatback.pojos.converation.ConversationService;
 import com.chatback.pojos.converation.message.Message;
 import com.chatback.pojos.converation.message.MessageService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,12 +12,13 @@ import java.util.List;
 import java.util.logging.Logger;
 
 @RestController
-public class Messenger extends Controller
+public class MessageController extends Controller
 {
 
     @Autowired
     private MessageService messageService;
 
+    @CrossOrigin
     @RequestMapping(value = "chat", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
     public void receive(@RequestBody  Conversation conversation)
@@ -26,9 +28,11 @@ public class Messenger extends Controller
         //TODO:Call db
 
         int index = messages.size()-1;
-        messageService.saveMessages(messages.get(index));
+        messageService.saveAllMessages(messages);
 
     }
+
+    @CrossOrigin
     @RequestMapping(value = "chat", method = RequestMethod.GET)
     public Conversation retrieve(@RequestParam(defaultValue = "1") int index)
     {

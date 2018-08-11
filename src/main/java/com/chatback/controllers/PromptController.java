@@ -1,31 +1,25 @@
 package com.chatback.controllers;
 
 import com.chatback.pojos.prompt.Prompt;
-import com.chatback.pojos.prompt.Prompts;
+import com.chatback.pojos.prompt.PromptService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
-
 @RestController
 public class PromptController extends Controller
 {
-//    @RequestMapping(value = "prompts", method = RequestMethod.GET)
-//    public Prompts retrieve()
-//    {
-//        Prompts conversation = getConversation();
-//        return conversation;
-//    }
+    @Autowired
+    PromptService promptService;
 
-//    private Prompts getConversation()
-//    {
-////        //TODO:Call db
-////        DatabaseBroker databaseBroker = new DatabaseBroker();
-////
-////        List<Prompt> prompts = databaseBroker.getPrompts();
-////        Prompts p = Prompts.builder().build();
-////        p.setPrompt(prompts);
-////        return p;
-//    }
+    @CrossOrigin
+    @RequestMapping(value = "prompts", method = RequestMethod.GET)
+    public Prompt[] retrieve()
+    {
+        Prompt[] allPropmts = promptService.getAllPropmts();
+        return allPropmts;
+    }
+
 }
