@@ -1,40 +1,61 @@
 package com.chatback.pojos.converation;
 
-import java.util.List;
+import com.chatback.pojos.converation.message.Message;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import jdk.nashorn.internal.objects.annotations.Getter;
 import lombok.Builder;
 import lombok.Data;
+import lombok.ToString;
+import org.hibernate.annotations.Cascade;
 
-import javax.annotation.Generated;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Data
 @Builder
-public class Conversation{
+@Entity
+@ToString
+public class Conversation
+{
+	@Id
+	@JsonProperty("id")
+	private String id;
 
-	@JsonProperty("responses")
-	private List<Response> responses;
+	@JsonProperty("response")
+	@OneToMany
+//	@JoinColumn(name = "response")
+	private List<Response> response = new ArrayList<>();
 
-	@JsonProperty("messages")
-	private List<Message> messages;
+	@JsonProperty("message")
+	@OneToMany
+//	@JoinColumn(name = "id", referencedColumnName = "id")
+	@Cascade(org.hibernate.annotations.CascadeType.ALL)
+	private List<Message> message = new ArrayList<>();
 
 	@JsonProperty("startTime")
-	private int startTime;
-
-	@JsonProperty("id")
-	private int id;
+	private String startTime;
 
 	@JsonProperty("endTime")
 	private int endTime;
 
+
 	@Override
- 	public String toString(){
-		return 
-			"Conversation{" + 
-			"responses = '" + responses + '\'' + 
-			",messages = '" + messages + '\'' + 
-			",startTime = '" + startTime + '\'' + 
-			",id = '" + id + '\'' + 
-			",endTime = '" + endTime + '\'' + 
-			"}";
+	public String toString()
+	{
+		String self = "";
+		ObjectMapper mapper = new ObjectMapper();
+
+		try
+		{
+			self = mapper.writeValueAsString(this);
 		}
+		catch (Exception e)
+		{
+
+		}
+		return self;
+	}
 }

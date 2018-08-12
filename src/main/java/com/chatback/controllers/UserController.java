@@ -8,12 +8,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.logging.Logger;
 
 @RestController
-public class UserManager extends Controller
+public class UserController extends Controller
 {
 
     @Autowired
     private UserService userService;
 
+    @CrossOrigin
     @RequestMapping(value = "users", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
     public void createUser(@RequestBody User user)
@@ -25,6 +26,7 @@ public class UserManager extends Controller
     }
 
 
+    @CrossOrigin
     @RequestMapping(value = "users", method = RequestMethod.GET)
     public User retrieveUser(@RequestParam(defaultValue = "12") String uid)
     {
