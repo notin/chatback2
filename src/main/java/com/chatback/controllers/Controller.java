@@ -19,5 +19,4 @@ public class Controller {
         }
         return localip;
     }
-
 }
