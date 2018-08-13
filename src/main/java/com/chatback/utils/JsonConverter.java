@@ -7,15 +7,15 @@ import java.util.logging.Logger;
 
 public class JsonConverter
 {
-    Logger logger = Logger.getAnonymousLogger();
-    ObjectMapper mapper = new ObjectMapper();
+    static Logger logger = Logger.getAnonymousLogger();
+    static ObjectMapper mapper = new ObjectMapper();
 
     public JsonConverter()
     {
         mapper.enable(DeserializationFeature.ACCEPT_SINGLE_VALUE_AS_ARRAY);
     }
 
-    public  <T> T getResponse(Class<T> clazz, T response, String responce)
+    public static  <T> T  getResponse(Class<T> clazz, T response, String responce)
     {
         try
         {
@@ -28,7 +28,7 @@ public class JsonConverter
         return response;
     }
 
-    public String toJson(Object object)
+    public static String  toJson(Object object)
     {
         String jsonInString = "";
         try {
