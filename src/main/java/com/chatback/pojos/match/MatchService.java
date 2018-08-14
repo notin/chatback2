@@ -71,7 +71,13 @@ public class MatchService
         }
         String guis = getGUIS();
         settingValues(match, match1, guis);
+        removePairFromList(match, match1);
         return match;
+    }
+
+    private static void removePairFromList(Match match, Match match1) {
+        members.remove(match);
+        members.remove(match1);
     }
 
     private static void settingValues(Match match, Match match1, String guis) {
