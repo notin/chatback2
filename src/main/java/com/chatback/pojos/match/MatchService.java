@@ -20,18 +20,21 @@ public class MatchService
 
 
    private  static List<Match> members = new ArrayList<>();
+    private static Executor executor;
+    private static String guis=null;
 
 
     public static Match getMatch(Match match)
     {
-        return getMatchCompletableFuture(match, MatchService::getMember);
-
+        Match matchCompletableFuture = getMatchCompletableFuture(match, MatchService::getMember);
+        Logger.getAnonymousLogger().info("has matched");
+        return matchCompletableFuture;
     }
 
     private static Match getMatchCompletableFuture(Match match, Function<Match,Match> function) {
         members.add(match);
         Match match1 = null;
-        Executor executor = Executors.newFixedThreadPool(10);
+        executor = Executors.newFixedThreadPool(10);
         CompletableFuture<Match> completableFuture = new CompletableFuture<>().supplyAsync(new Supplier<Match>()
                                                                                                                     {
                                                                                                                         @Override
@@ -58,6 +61,7 @@ public class MatchService
         } catch (Exception e) {
             e.printStackTrace();
         }
+        removePairFromList(match, match1);
         return match1;
     }
 
@@ -69,9 +73,12 @@ public class MatchService
             match1 = members.stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).findFirst().orElse(null);
 
         }
-        String guis = getGUIS();
+        if(guis == null)
+        {
+            guis = getGUIS();
+        }
         settingValues(match, match1, guis);
-        removePairFromList(match, match1);
+        guis = null;
         return match;
     }
 
@@ -83,12 +90,18 @@ public class MatchService
     private static void settingValues(Match match, Match match1, String guis) {
         match.setPartner(match1.getSelf());
         match1.setPartner(match.getSelf());
-        if(match.getConversation() == null)
+        List<String> guisList = new ArrayList<>();
+        guisList.add(match.getConversation());
+        guisList.add(match1.getConversation());
+        String guiPlace = guisList.stream().filter(x->x!=null).findFirst().orElse(null);
+        if(guiPlace == null)
         {
             match.setConversation(guis);
+            match1.setConversation(guis);
         }
-        if(match.getConversation() == null)
+        else
         {
+            match.setConversation(guis);
             match1.setConversation(guis);
         }
     }
