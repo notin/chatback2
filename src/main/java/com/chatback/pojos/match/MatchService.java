@@ -10,6 +10,7 @@ import java.util.concurrent.*;
 import java.util.function.Function;
 import java.util.function.Supplier;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 @Service
 
@@ -61,30 +62,31 @@ public class MatchService
         } catch (Exception e) {
             e.printStackTrace();
         }
-        removePairFromList(match, match1);
+
+        removePairFromList(match);
         return match1;
     }
 
-    private static Match getMember(Match match) {
-
-        Match match1 = null;
-        while(match1 == null)
+    private static synchronized Match getMember(Match match)
+    {
+        Match partner = null;
+        while(partner == null && match.getPartner()==null)
         {
-            match1 = members.stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).findFirst().orElse(null);
+            partner = members.stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).findFirst().orElse(null);
 
         }
         if(guis == null)
         {
             guis = getGUIS();
         }
-        settingValues(match, match1, guis);
+        settingValues(match, partner, guis);
         guis = null;
         return match;
     }
 
-    private static void removePairFromList(Match match, Match match1) {
-        members.remove(match);
-        members.remove(match1);
+    private static void removePairFromList(Match match1)
+    {
+        members = members.stream().filter(x->x!=match1).collect(Collectors.toList());
     }
 
     private static void settingValues(Match match, Match match1, String guis) {
