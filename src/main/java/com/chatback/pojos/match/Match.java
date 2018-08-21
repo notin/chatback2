@@ -22,6 +22,9 @@ public class Match
 	@JsonProperty("partner")
 	private String partner;
 
+	@JsonProperty("matched")
+	private boolean matched;
+
 	@Id
 	@JsonProperty("conversation")
 	private String conversation;

@@ -24,6 +24,20 @@ public class MatchController extends Controller
     @ResponseBody
     public Match requestMatch(@RequestBody Match match)
     {
-       return matchService.getMatch(match);
+        Match toReturn = match;
+        try
+        {
+            match = matchService.getMatch(match);
+            return toReturn;
+        }
+        catch (Exception e)
+        {
+            Logger.getAnonymousLogger().info(e.getLocalizedMessage());
+        }
+        finally
+        {
+            matchService.removeMatch(match);
+        }
+        return toReturn;
     }
 }

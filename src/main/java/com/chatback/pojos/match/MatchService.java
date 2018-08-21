@@ -3,9 +3,7 @@ package com.chatback.pojos.match;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
+import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.Supplier;
 import java.util.logging.Logger;
@@ -18,7 +16,7 @@ public class MatchService
     private MatchRepository matchRepository;
 
 
-   private static List<Match> members = new ArrayList<>();
+   private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
     private static String guis = null;
 
 
@@ -35,7 +33,6 @@ public class MatchService
         Match match1 = null;
         Executor executor = Executors.newFixedThreadPool(5);
         match1 = getMatch(match, executor);
-        removeMatch(match, executor);
         return match1;
     }
 
@@ -52,8 +49,9 @@ public class MatchService
         return match1;
     }
 
-    private static void removeMatch(Match match, Executor executor)
+    public static void removeMatch(Match match)
     {
+        Executor executor = Executors.newFixedThreadPool(5);
         CompletableFuture<Match> completableFuture = getAttemptingRemoval(match, executor);
         try
         {
@@ -70,21 +68,21 @@ public class MatchService
                                                         @Override
                                                         public Match get()
                                                         {
-                                                            Match member =null;
-                                                            while(member == null)
+
+                                                            while(!match.isMatched())
                                                             {
                                                                 try
                                                                 {
-                                                                    TimeUnit.SECONDS.sleep(2);
+                                                                    TimeUnit.SECONDS.sleep(1);
                                                                     Logger.getAnonymousLogger().info("attempting match");
-                                                                    member = getMember(match);
+                                                                     getMember(match);
                                                                 }
                                                                 catch (Exception e)
                                                                 {
-                                                                    throw new IllegalStateException(e);
+                                                                    Logger.getAnonymousLogger().info(e.getLocalizedMessage());
                                                                 }
                                                             }
-                                                            return member; }}, executor);
+                                                            return match; }}, executor);
     }
 
     private static CompletableFuture<Match> getAttemptingRemoval(Match match, Executor executor)
@@ -93,21 +91,22 @@ public class MatchService
             @Override
             public Match get()
             {
-                Match member =null;
-                while(member == null)
+                while(getMembers().contains(match))
                 {
-                    try
+                    Match partner = getMembers().stream().filter(x -> x.getSelf().equalsIgnoreCase(x.getPartner())).findFirst().orElse(null);
+                    if(partner == null || partner.isMatched())
                     {
-                        TimeUnit.SECONDS.sleep(2);
-                        Logger.getAnonymousLogger().info("attempting remaoval after successful match");
-                        removePairFromList(match);
-                    }
-                    catch (Exception e)
-                    {
-                        throw new IllegalStateException(e);
+                        try
+                        {
+                            TimeUnit.SECONDS.sleep(2);
+                            Logger.getAnonymousLogger().info("attempting removal after successful match");
+                            removePairFromList(match);
+                        } catch (Exception e) {
+                            Logger.getAnonymousLogger().info(e.getLocalizedMessage());
+                        }
                     }
                 }
-                return member; }}, executor);
+                return match; }}, executor);
     }
 
     private static Match getMember(Match match) {
@@ -121,17 +120,27 @@ public class MatchService
         {
             guis = getGUIS();
         }
-        settingValues(match, partner, guis);
+        if(match.isMatched() == false || partner.isMatched() == false)
+        {
+            settingValues(match, partner, guis);
+        }
         guis = null;
         return match;
     }
 
     private static void removePairFromList(Match match)
     {
-        getMembers().remove(match);
+        Iterator<Match> iterator = getMembers().iterator();
+        while(iterator.hasNext())
+        {
+            if(iterator.next() == match)
+            {
+                iterator.remove();
+            }
+        }
     }
 
-    private static void settingValues(Match match, Match match1, String guis)
+    private static synchronized void settingValues(Match match, Match match1, String guis)
     {
         match.setPartner(match1.getSelf());
         match1.setPartner(match.getSelf());
@@ -151,6 +160,8 @@ public class MatchService
             match.setConversation(guis);
             match1.setConversation(guis);
         }
+        match.setMatched(true);
+        match1.setMatched(true);
     }
 
     public static String getGUIS()
