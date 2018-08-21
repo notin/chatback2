@@ -19,3 +19,9 @@ spring:
 
   logging:
     level: DEBUG
+
+  server:
+    session:
+    cookie:
+      max-age: 36000
+      timeout: 36000
