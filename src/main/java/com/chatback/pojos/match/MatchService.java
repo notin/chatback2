@@ -16,7 +16,7 @@ public class MatchService
     private MatchRepository matchRepository;
 
 
-   private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
+   private static LinkedHashSet<Match> members =new LinkedHashSet<>();
     private static String guis = null;
 
 
@@ -29,11 +29,20 @@ public class MatchService
 
     private static Match getMatchCompletableFuture(Match match)
     {
-        members.add(match);
+        addToList(match);
         Match match1 = null;
         Executor executor = Executors.newFixedThreadPool(5);
         match1 = getMatch(match, executor);
         return match1;
+    }
+
+    private static void addToList(Match match)
+    {
+        boolean present = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getSelf())).findFirst().isPresent();
+        if(!present)
+        {
+            members.add(match);
+        }
     }
 
     private static Match getMatch(Match match, Executor executor)
@@ -73,7 +82,7 @@ public class MatchService
                                                             {
                                                                 try
                                                                 {
-                                                                    TimeUnit.SECONDS.sleep(1);
+                                                                    TimeUnit.MILLISECONDS.sleep(15);
                                                                     Logger.getAnonymousLogger().info("attempting match");
                                                                      getMember(match);
                                                                 }
@@ -98,7 +107,7 @@ public class MatchService
                     {
                         try
                         {
-                            TimeUnit.SECONDS.sleep(2);
+                            TimeUnit.MILLISECONDS.sleep(2);
                             Logger.getAnonymousLogger().info("attempting removal after successful match");
                             removePairFromList(match);
                         } catch (Exception e) {
@@ -173,7 +182,7 @@ public class MatchService
             return randomUUIDString;
     }
 
-    private synchronized static List<Match> getMembers()
+    private synchronized static LinkedHashSet<Match> getMembers()
     {
         return members;
     }
