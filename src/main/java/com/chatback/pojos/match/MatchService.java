@@ -15,8 +15,7 @@ public class MatchService
     @Autowired
     private MatchRepository matchRepository;
 
-
-   private static LinkedHashSet<Match> members =new LinkedHashSet<>();
+    private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
     private static String guis = null;
 
 
@@ -61,10 +60,13 @@ public class MatchService
     public static void removeMatch(Match match)
     {
         Executor executor = Executors.newFixedThreadPool(5);
+        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getPartner())).findFirst().get();
         CompletableFuture<Match> completableFuture = getAttemptingRemoval(match, executor);
+        CompletableFuture<Match> completableFuture2 = getAttemptingRemoval(partner, executor);
         try
         {
             completableFuture.get();
+            completableFuture2.get();
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -182,7 +184,7 @@ public class MatchService
             return randomUUIDString;
     }
 
-    private synchronized static LinkedHashSet<Match> getMembers()
+    private synchronized static List<Match> getMembers()
     {
         return members;
     }
