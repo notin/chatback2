@@ -3,6 +3,9 @@ package com.chatback.pojos.match;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.Supplier;
@@ -86,7 +89,20 @@ public class MatchService
                                                                 {
                                                                     TimeUnit.MILLISECONDS.sleep(15);
                                                                     Logger.getAnonymousLogger().info("attempting match");
-                                                                     getMember(match);
+                                                                    String timestamp = match.getTimestamp();
+                                                                    LocalDate date =
+                                                                            Instant.ofEpochMilli(Long.valueOf(timestamp)).atZone(ZoneId.systemDefault()).toLocalDate();
+                                                                    LocalDate current =
+                                                                        Instant.ofEpochMilli(System.currentTimeMillis()).atZone(ZoneId.systemDefault()).toLocalDate();
+                                                                    if(date.compareTo(current)>300000)
+                                                                    {
+                                                                        removeMatch(match);
+                                                                        throw new TimeoutException();
+                                                                    }
+                                                                    else
+                                                                        {
+                                                                        getMember(match);
+                                                                    }
                                                                 }
                                                                 catch (Exception e)
                                                                 {

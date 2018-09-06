@@ -27,6 +27,7 @@ public class MatchController extends Controller
         Match toReturn = match;
         try
         {
+            match.setTimestamp(String.valueOf(System.currentTimeMillis()));
             match = matchService.getMatch(match);
             return toReturn;
         }
