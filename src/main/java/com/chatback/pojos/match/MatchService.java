@@ -61,13 +61,25 @@ public class MatchService
     public static void removeMatch(Match match)
     {
         Executor executor = Executors.newFixedThreadPool(5);
-        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getPartner())).findFirst().get();
+        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getPartner())).findFirst().orElse(null);
         CompletableFuture<Match> completableFuture = getAttemptingRemoval(match, executor);
         CompletableFuture<Match> completableFuture2 = getAttemptingRemoval(partner, executor);
         try
         {
-            completableFuture.get();
-            completableFuture2.get();
+            if(match!=null)
+            {
+                if (match.isDelivered() == true)
+                {
+                    completableFuture.get();
+                }
+            }
+            if(partner !=null)
+            {
+                if (partner.isDelivered() == true)
+                {
+                    completableFuture2.get();
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -87,22 +99,11 @@ public class MatchService
                                                                 {
                                                                     TimeUnit.MILLISECONDS.sleep(15);
                                                                     Logger.getAnonymousLogger().info("attempting match" + match.getSelf());
-                                                                    members.stream().forEachOrdered(x->Logger.getAnonymousLogger().info("matches in member list " + x.getSelf()));
+                                                                    members.stream().filter(x->!x.getSelf().equalsIgnoreCase(match.getSelf())).forEachOrdered(x->Logger.getAnonymousLogger().info("matches in member list " + x.getSelf()));
 
-                                                                    String timestamp = match.getTimestamp();
-                                                                    LocalDate date =
-                                                                            Instant.ofEpochMilli(Long.valueOf(timestamp)).atZone(ZoneId.systemDefault()).toLocalDate();
-                                                                    LocalDate current =
-                                                                        Instant.ofEpochMilli(System.currentTimeMillis()).atZone(ZoneId.systemDefault()).toLocalDate();
-                                                                    if(date.compareTo(current)>300000)
-                                                                    {
-                                                                        removeMatch(match);
-                                                                        throw new TimeoutException();
-                                                                    }
-                                                                    else
-                                                                        {
-                                                                        getMember(match);
-                                                                    }
+                                                                    members.stream().forEachOrdered(x->removeOld(x));
+                                                                    getMember(match);
+
                                                                 }
                                                                 catch (Exception e)
                                                                 {
@@ -110,6 +111,24 @@ public class MatchService
                                                                 }
                                                             }
                                                             return match; }}, executor);
+
+    }
+
+    private static void removeOld(Match match)  {
+        String timestamp = match.getTimestamp();
+
+        if(System.currentTimeMillis()-Long.valueOf(timestamp)>300000)
+        {
+            try
+            {
+                removeMatch(match);
+                throw new TimeoutException();
+            }
+            catch (Exception e)
+            {
+                Logger.getAnonymousLogger().info(e.getLocalizedMessage());
+            }
+        }
     }
 
     private static CompletableFuture<Match> getAttemptingRemoval(Match match, Executor executor)

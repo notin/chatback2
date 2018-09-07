@@ -37,6 +37,7 @@ public class MatchController extends Controller
         }
         finally
         {
+            match.setDelivered(true);
             matchService.removeMatch(match);
         }
         return toReturn;

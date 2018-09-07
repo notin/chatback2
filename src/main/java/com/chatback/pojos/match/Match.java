@@ -25,6 +25,9 @@ public class Match
 	@JsonProperty("matched")
 	private boolean matched;
 
+	@JsonProperty("delivered")
+	private boolean delivered;
+
 	@JsonProperty("timestamp")
 	private String timestamp;
 
