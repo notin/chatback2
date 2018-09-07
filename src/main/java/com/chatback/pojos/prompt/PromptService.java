@@ -29,4 +29,9 @@ public class PromptService
         return  target.toArray(toReturn);
     }
 
+    public void setAllPropmts(List<Prompts2> collect)
+    {
+        promptRepository.saveAll(collect);
+    }
+
 }

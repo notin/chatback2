@@ -31,7 +31,7 @@ public class Response
 	@Override
  	public String toString(){
 		return 
-			"Response{" +
+			"ResponsePrompt{" +
 			"type = '" + type + '\'' + 
 			",gui_2 = '" + gui2 + '\'' + 
 			",gui_1 = '" + gui1 + '\'' + 

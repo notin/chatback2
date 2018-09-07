@@ -1,29 +1,33 @@
 package com.chatback.pojos.newPropmpts;
 
+import java.util.List;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
 import javax.annotation.Generated;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Data
 @Builder
 @Entity
 @ToString
-public class Main{
+public class ResponsePrompt
+{
 
 	@Id
 	@JsonProperty("id")
 	private String id;
 
-	@JsonProperty("explaination")
-	private String explaination;
+	@ManyToOne
+	@JsonProperty("main")
+	private Main main;
 
-	@JsonProperty("v")
-	private String v;
+	@OneToMany
+	@OrderColumn
+	@JsonProperty("actions")
+	private ActionsItem[] actions;
 
 	@JsonProperty("k")
 	private String k;

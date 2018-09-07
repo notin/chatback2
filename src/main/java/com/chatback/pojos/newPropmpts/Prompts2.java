@@ -5,9 +5,9 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 
 @Data
@@ -21,14 +21,14 @@ public class Prompts2
 	@JsonProperty("id")
 	private String id;
 
-	@JsonProperty("t")
-	private String t;
 
-	@JsonProperty("f")
-	private String f;
+	@ManyToOne
+	@JsonProperty("response")
+	private ResponsePrompt response;
 
-	@JsonProperty("contents")
-	private int contents;
+	@ManyToOne
+	@JsonProperty("main")
+	private Main main;
 
 	@JsonProperty("k")
 	private int k;

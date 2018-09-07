@@ -12,4 +12,5 @@ import javax.transaction.Transactional;
 public interface PromptRepository extends CrudRepository<Prompts2, Long>
 {
      Prompts2 findPromptById(String uid);
+
 }

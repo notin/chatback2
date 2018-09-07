@@ -16,6 +16,10 @@ import static com.chatback.utils.JsonConverter.toJson;
 public class Match
 {
 
+	@Id
+	@JsonProperty("id")
+	private String id;
+
 	@JsonProperty("self")
 	private String self;
 
@@ -31,7 +35,6 @@ public class Match
 	@JsonProperty("timestamp")
 	private String timestamp;
 
-	@Id
 	@JsonProperty("conversation")
 	private String conversation;
 

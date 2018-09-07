@@ -1,14 +1,28 @@
 package com.chatback.pojos.newPropmpts;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.Builder;
+import lombok.Data;
+import lombok.ToString;
+
 import javax.annotation.Generated;
+import javax.persistence.Entity;
+import javax.persistence.Id;
 
-@Generated("com.robohorse.robopojogenerator")
-public class ActionsItem{
+@Data
+@Builder
+@Entity
+@ToString
+public class ActionsItem
+{
 
-	@JsonProperty("value")
-	private String value;
+	@Id
+	@JsonProperty("id")
+	private String id;
 
-	@JsonProperty("key")
-	private String key;
+	@JsonProperty("v")
+	private String v;
+
+	@JsonProperty("k")
+	private String k;
 }
