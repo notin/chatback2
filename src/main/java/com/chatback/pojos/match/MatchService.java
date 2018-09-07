@@ -22,7 +22,7 @@ public class MatchService
     public static Match getMatch(Match match)
     {
         Match matchCompletableFuture = getMatchCompletableFuture(match);
-        Logger.getAnonymousLogger().info("has matched");
+        Logger.getAnonymousLogger().info("has matched for " + match.getSelf();
         return matchCompletableFuture;
     }
 
@@ -85,7 +85,7 @@ public class MatchService
                                                                 try
                                                                 {
                                                                     TimeUnit.MILLISECONDS.sleep(15);
-                                                                    Logger.getAnonymousLogger().info("attempting match for" + match.getSelf());
+                                                                    Logger.getAnonymousLogger().info("attempting match for " + match.getSelf());
                                                                     getMember(match);
                                                                 }
                                                                 catch (Exception e)
@@ -110,7 +110,7 @@ public class MatchService
                         try
                         {
                             TimeUnit.MILLISECONDS.sleep(2);
-                            Logger.getAnonymousLogger().info("attempting removal after successful match");
+                            Logger.getAnonymousLogger().info("attempting removal after successful match for " + match.getSelf();
                             removePairFromList(match);
                         } catch (Exception e) {
                             Logger.getAnonymousLogger().info(e.getLocalizedMessage());
