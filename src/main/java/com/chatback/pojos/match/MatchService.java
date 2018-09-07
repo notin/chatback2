@@ -12,7 +12,6 @@ import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 @Service
-
 public class MatchService
 {
     @Autowired
@@ -20,7 +19,6 @@ public class MatchService
 
     private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
     private static String guis = null;
-
 
     public static Match getMatch(Match match)
     {
