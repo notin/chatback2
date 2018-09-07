@@ -1,5 +1,6 @@
 package com.chatback.controllers;
 
+import com.chatback.pojos.newPropmpts.Pompts2;
 import com.chatback.pojos.prompt.Prompt;
 import com.chatback.pojos.prompt.PromptService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,9 +17,9 @@ public class PromptController extends Controller
 
     @CrossOrigin
     @RequestMapping(value = "prompts", method = RequestMethod.GET)
-    public Prompt[] retrieve()
+    public Pompts2[] retrieve()
     {
-        Prompt[] allPropmts = promptService.getAllPropmts();
+        Pompts2[] allPropmts = promptService.getAllPropmts();
         return allPropmts;
     }
 

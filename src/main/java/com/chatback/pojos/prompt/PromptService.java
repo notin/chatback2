@@ -1,6 +1,7 @@
 package com.chatback.pojos.prompt;
 
 import com.chatback.pojos.converation.Conversation;
+import com.chatback.pojos.newPropmpts.Pompts2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,19 +14,19 @@ public class PromptService
     @Autowired
     private PromptRepository promptRepository;
 
-    public Prompt findPromptById(String id)
+    public Pompts2 findPromptById(String id)
     {
        return promptRepository.findPromptById(id);
     }
 
-    public Prompt[] getAllPropmts()
+    public Pompts2[] getAllPropmts()
     {
-        Prompt[] toReturn = null;
-        Iterable<Prompt> all = promptRepository.findAll();
+        Pompts2[] toReturn = null;
+        Iterable<Pompts2> all = promptRepository.findAll();
 
-        List<Prompt> target = new ArrayList<>();
+        List<Pompts2> target = new ArrayList<>();
         all.forEach(target::add);
-        toReturn= new Prompt[target.size()-1];
+        toReturn= new Pompts2[target.size()-1];
         return  target.toArray(toReturn);
     }
 
