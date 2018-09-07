@@ -3,13 +3,15 @@ package com.chatback.pojos.match;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.ZoneId;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 @Service
-
 public class MatchService
 {
     @Autowired
@@ -17,7 +19,6 @@ public class MatchService
 
     private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
     private static String guis = null;
-
 
     public static Match getMatch(Match match)
     {
@@ -60,13 +61,25 @@ public class MatchService
     public static void removeMatch(Match match)
     {
         Executor executor = Executors.newFixedThreadPool(5);
-        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getPartner())).findFirst().get();
+        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getPartner())).findFirst().orElse(null);
         CompletableFuture<Match> completableFuture = getAttemptingRemoval(match, executor);
         CompletableFuture<Match> completableFuture2 = getAttemptingRemoval(partner, executor);
         try
         {
-            completableFuture.get();
-            completableFuture2.get();
+            if(match!=null)
+            {
+                if (match.isDelivered() == true)
+                {
+                    completableFuture.get();
+                }
+            }
+            if(partner !=null)
+            {
+                if (partner.isDelivered() == true)
+                {
+                    completableFuture2.get();
+                }
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -85,8 +98,10 @@ public class MatchService
                                                                 try
                                                                 {
                                                                     TimeUnit.MILLISECONDS.sleep(15);
-                                                                    Logger.getAnonymousLogger().info("attempting match for " + match.getSelf());
-                                                                    members.stream().forEachOrdered(x->Logger.getAnonymousLogger().info("matches in member list " + x.getSelf()));
+                                                                    Logger.getAnonymousLogger().info("attempting match" + match.getSelf());
+                                                                    members.stream().filter(x->!x.getSelf().equalsIgnoreCase(match.getSelf())).forEachOrdered(x->Logger.getAnonymousLogger().info("matches in member list " + x.getSelf()));
+
+                                                                    members.stream().forEachOrdered(x->removeOld(x));
                                                                     getMember(match);
 
                                                                 }
@@ -96,6 +111,24 @@ public class MatchService
                                                                 }
                                                             }
                                                             return match; }}, executor);
+
+    }
+
+    private static void removeOld(Match match)  {
+        String timestamp = match.getTimestamp();
+
+        if(System.currentTimeMillis()-Long.valueOf(timestamp)>300000)
+        {
+            try
+            {
+                removeMatch(match);
+                throw new TimeoutException();
+            }
+            catch (Exception e)
+            {
+                Logger.getAnonymousLogger().info(e.getLocalizedMessage());
+            }
+        }
     }
 
     private static CompletableFuture<Match> getAttemptingRemoval(Match match, Executor executor)

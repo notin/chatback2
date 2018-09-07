@@ -27,8 +27,9 @@ public class MatchController extends Controller
         Match toReturn = match;
         try
         {
+            match.setTimestamp(String.valueOf(System.currentTimeMillis()));
             match = matchService.getMatch(match);
-            return toReturn;
+            return match;
         }
         catch (Exception e)
         {
@@ -36,6 +37,8 @@ public class MatchController extends Controller
         }
         finally
         {
+            match.setDelivered(true);
+            Logger.getAnonymousLogger().info( "delivering " + match.toString());
             matchService.removeMatch(match);
         }
         return toReturn;
