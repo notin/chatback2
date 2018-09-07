@@ -86,7 +86,7 @@ public class MatchService
                                                                 {
                                                                     TimeUnit.MILLISECONDS.sleep(15);
                                                                     Logger.getAnonymousLogger().info("attempting match for" + match.getSelf());
-                                                                     getMember(match);
+                                                                    getMember(match);
                                                                 }
                                                                 catch (Exception e)
                                                                 {
