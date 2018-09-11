@@ -1,7 +1,8 @@
 package com.chatback.controllers;
 
-import com.chatback.pojos.activity.Activity;
+import com.chatback.pojos.activity.*;
 import com.chatback.pojos.activity.ActivityService;
+import com.chatback.pojos.activity.promptActivity.PromptActivity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +17,28 @@ public class ActivityController extends Controller
 
     @Autowired
     private ActivityService activityService;
+
+    @CrossOrigin
+    @RequestMapping(value = "activity", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
+    @ResponseBody
+    public void savePromptActivty(@RequestBody PromptActivity promptActivity)
+    {
+        String time = String.valueOf(System.currentTimeMillis());
+        Logger.getAnonymousLogger().info(time);
+        setId(promptActivity);
+        setTime(promptActivity);
+        activityService.save(promptActivity);
+    }
+
+//    @CrossOrigin
+//    @RequestMapping(value = "activity", method = RequestMethod.GET)
+//    public Activity retrieveActivity(@RequestParam(defaultValue = "12") String uid)
+//    {
+//        String time = String.valueOf(System.currentTimeMillis());
+//        Logger.getAnonymousLogger().info(time);
+//
+//        return activityService.findActivitiesByTimeAfter(uid);
+//    }
 
     @CrossOrigin
     @RequestMapping(value = "activity", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
@@ -38,7 +61,7 @@ public class ActivityController extends Controller
 
         return activityService.findActivitiesByTimeAfter(uid);
     }
-    private void setId(@RequestBody Activity user)
+    private void setId( Activity user)
     {
         if(user.getId()==null)
         {
@@ -47,7 +70,7 @@ public class ActivityController extends Controller
         }
     }
 
-    private void setTime(@RequestBody Activity user)
+    private void setTime( Activity user)
     {
         if(user.getTime()==null)
         {
