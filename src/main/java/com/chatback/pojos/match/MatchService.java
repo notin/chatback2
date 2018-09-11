@@ -12,8 +12,7 @@ import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 @Service
-public class MatchService
-{
+public class MatchService implements IGuid {
     @Autowired
     private MatchRepository matchRepository;
 
@@ -164,7 +163,7 @@ public class MatchService
         }
         if(guis == null)
         {
-            guis = getGUIS();
+            guis = IGuid.getGUIS();
         }
         if(match.isMatched() == false || partner.isMatched() == false)
         {
@@ -208,15 +207,6 @@ public class MatchService
         }
         match.setMatched(true);
         match1.setMatched(true);
-    }
-
-    public static String getGUIS()
-    {
-            // Creating a random UUID (Universally unique identifier).
-            UUID uuid = UUID.randomUUID();
-            String randomUUIDString = uuid.toString();
-
-            return randomUUIDString;
     }
 
     private synchronized static List<Match> getMembers()
