@@ -14,8 +14,8 @@ import java.util.logging.Logger;
 @Service
 public class MatchService
 {
-    @Autowired
-    private MatchRepository matchRepository;
+//    @Autowired
+//    private MatchRepository matchRepository;
 
     private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
     private static String guis = null;
