@@ -24,7 +24,7 @@ public class PromptActivityController extends Controller
     {
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
-
+        setTime(promptActivity);
         promptActivityService.save(promptActivity);
         return promptActivityService.findActivitiesById(promptActivity.getId());
     }
@@ -55,12 +55,12 @@ public class PromptActivityController extends Controller
         }
     }
 
-    private void setTime(@RequestBody Activity user)
+    private void setTime(PromptActivity promptActivity)
     {
-        if(user.getTime()==null)
+        if(promptActivity.getTime()==null || promptActivity.getTime().equalsIgnoreCase(""))
         {
-            ZonedDateTime pst = Instant.ofEpochMilli(System.currentTimeMillis()).atZone(ZoneId.of("PST"));
-            user.setTime(pst.toLocalDateTime().toString());
+            ZonedDateTime pst = Instant.ofEpochMilli(System.currentTimeMillis()).atZone(ZoneId.of("America/Los_Angeles"));
+            promptActivity.setTime(pst.toLocalDateTime().toString());
         }
     }
 }
