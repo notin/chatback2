@@ -1,8 +1,7 @@
 package com.chatback.controllers;
 
 import com.chatback.pojos.activity.Activity;
-import com.chatback.pojos.promptActivity.PromptActivity;
-import com.chatback.pojos.promptActivity.PromptActivityService;
+import com.chatback.pojos.prompacttivity.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -21,12 +20,13 @@ public class PromptActivityController extends Controller
     @CrossOrigin
     @RequestMapping(value = "promptactivity", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
-    public void saveActivity(@RequestBody PromptActivity user)
+    public PromptActivity saveActivity(@RequestBody PromptActivity promptActivity)
     {
         String time = String.valueOf(System.currentTimeMillis());
         Logger.getAnonymousLogger().info(time);
 
-        promptActivityService.save(user);
+        promptActivityService.save(promptActivity);
+        return promptActivityService.findActivitiesById(promptActivity.getId());
     }
 
     @CrossOrigin
@@ -37,15 +37,15 @@ public class PromptActivityController extends Controller
         return PromptActivity.builder().build();
     }
 
-    @CrossOrigin
-    @RequestMapping(value = "activity", method = RequestMethod.GET)
-    public Activity retrieveActivity(@RequestParam(defaultValue = "12") String uid)
-    {
-        String time = String.valueOf(System.currentTimeMillis());
-        Logger.getAnonymousLogger().info(time);
-
-        return promptActivityService.findActivitiesByTimeAfter(uid);
-    }
+//    @CrossOrigin
+//    @RequestMapping(value = "activity", method = RequestMethod.GET)
+//    public PromptActivity retrieveActivity(@RequestParam(defaultValue = "12") String uid)
+//    {
+//        String time = String.valueOf(System.currentTimeMillis());
+//        Logger.getAnonymousLogger().info(time);
+//
+//        return promptActivityService.findActivitiesByTimeAfter(uid);
+//    }
     private void setId(@RequestBody Activity user)
     {
         if(user.getId()==null)

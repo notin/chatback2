@@ -9,12 +9,17 @@ public class PromptActivityService
     @Autowired
     private PromptActivityRepository repository;
 
-    public PropmptActivity findActivitiesByTimeAfter(String id)
+    public PromptActivity findActivitiesByTimeAfter(String id)
     {
        return repository.findActivitiesByTimeAfter(id);
     }
 
-    public void save(PropmptActivity activity)
+    public PromptActivity findActivitiesById(String id)
+    {
+        return repository.findActivitiesById(id);
+    }
+
+    public void save(PromptActivity activity)
     {
         repository.save(activity);
     }

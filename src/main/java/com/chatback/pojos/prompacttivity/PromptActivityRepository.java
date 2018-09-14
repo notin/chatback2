@@ -7,8 +7,10 @@ import javax.transaction.Transactional;
 
 @Repository
 @Transactional
-public interface PromptActivityRepository extends CrudRepository<PropmptActivity, Long>
+public interface PromptActivityRepository extends CrudRepository<PromptActivity, Long>
 {
-     PropmptActivity findActivitiesByTimeAfter(String uid);
-     PropmptActivity findActivitiesByTimeBefore(String uid);
+     PromptActivity findActivitiesByTimeAfter(String uid);
+     PromptActivity findActivitiesByTimeBefore(String uid);
+
+     PromptActivity findActivitiesById(String uid);
 }

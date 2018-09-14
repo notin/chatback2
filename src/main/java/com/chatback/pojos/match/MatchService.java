@@ -1,11 +1,8 @@
 package com.chatback.pojos.match;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import com.chatback.GuiGenerator;
 import org.springframework.stereotype.Service;
 
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.ZoneId;
 import java.util.*;
 import java.util.concurrent.*;
 import java.util.function.Supplier;
@@ -164,7 +161,7 @@ public class MatchService
         }
         if(guis == null)
         {
-            guis = getGUIS();
+            guis = GuiGenerator.getGUIS();
         }
         if(match.isMatched() == false || partner.isMatched() == false)
         {
@@ -208,15 +205,6 @@ public class MatchService
         }
         match.setMatched(true);
         match1.setMatched(true);
-    }
-
-    public static String getGUIS()
-    {
-            // Creating a random UUID (Universally unique identifier).
-            UUID uuid = UUID.randomUUID();
-            String randomUUIDString = uuid.toString();
-
-            return randomUUIDString;
     }
 
     private synchronized static List<Match> getMembers()
