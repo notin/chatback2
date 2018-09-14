@@ -1,4 +1,4 @@
-package com.chatback.pojos.activity;
+package com.chatback.pojos.prompacttivity;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
@@ -6,10 +6,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.ToString;
 
-import javax.annotation.Generated;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import static com.chatback.GuiGenerator.getGUIS;
 import static com.chatback.utils.JsonConverter.toJson;
 
 @Data
@@ -17,7 +17,7 @@ import static com.chatback.utils.JsonConverter.toJson;
 @Entity
 @ToString
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class Activity
+public class PromptActivity
 {
 
 	@JsonProperty("meta-info")
@@ -26,12 +26,11 @@ public class Activity
 	@JsonProperty("time")
 	private String time;
 
-	@JsonProperty("type")
-	private String type;
+	@JsonProperty("prompt")
+	private String prompt;
 
 	@Id
-	@JsonProperty("id")
-	private String id;
+	private String id = getGUIS();
 
 	@Override
 	public String toString()
