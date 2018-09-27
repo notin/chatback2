@@ -1,807 +1,808 @@
 {
-  "key": "concerns",
+  "k": "concerns",
   "main": {
-    "key": "I'm concerned...",
-    "value": "I'm concerned that ",
+    "k": "I'm concerned...",
+    "v": "I'm concerned that ",
     "explaination": "Share a concern causing stress, worry, or low mood. (They’re going to share with you, too)"
   },
   "response": {
-    "key": "concernsResponse",
+    "k": "concernsResponse",
     "main": {
-      "key": "Respond to concerns...",
-      "value": "",
+      "k": "Respond to concerns...",
+      "v": "",
       "explaination": "Summarize your chat buddy's concerns in your own words"
     },
     "actions": [
       {
-        "key": "I hear...",
-        "value": "I hear that "
+        "k": "I hear...",
+        "v": "I hear that "
+        "v": "I hear that "
       },
       {
-        "key": "I feel (about your situation)...",
-        "value": "I feel "
+        "k": "I feel (about your situation)...",
+        "v": "I feel "
       },
       {
-        "key": "You're saying...",
-        "value": "You're saying that "
+        "k": "You're saying...",
+        "v": "You're saying that "
       },
       {
-        "key": "I wish...",
-        "value": "I wish that "
+        "k": "I wish...",
+        "v": "I wish that "
       }
     ]
   }
 },
 {
-"key": "wants",
+"k": "wants",
 "main": {
-"key": "I want to feel...",
-"value": "I want to feel ",
+"k": "I want to feel...",
+"v": "I want to feel ",
 "explaination": "Describe the one feeling you most want in this situation. (You can add more later)",
 "tail": "because ",
 "search": ""
 },
 "actions": [
 {
-"key": "Add my own",
-"value": "",
+"k": "Add my own",
+"v": "",
 "editable": true
 },
 {
-"key": "Amused",
-"value": "amused "
+"k": "Amused",
+"v": "amused "
 },
 {
-"key": "Appreciated",
-"value": "appreciated "
+"k": "Appreciated",
+"v": "appreciated "
 },
 {
-"key": "Aware",
-"value": "aware "
+"k": "Aware",
+"v": "aware "
 },
 {
-"key": "Cheerful",
-"value": "cheerful "
+"k": "Cheerful",
+"v": "cheerful "
 },
 {
-"key": "Confident",
-"value": "confident "
+"k": "Confident",
+"v": "confident "
 },
 {
-"key": "Content",
-"value": "content "
+"k": "Content",
+"v": "content "
 },
 {
-"key": "Creative",
-"value": "creative "
+"k": "Creative",
+"v": "creative "
 },
 {
-"key": "Daring",
-"value": "daring "
+"k": "Daring",
+"v": "daring "
 },
 {
-"key": "Discerning",
-"value": "discerning "
+"k": "Discerning",
+"v": "discerning "
 },
 {
-"key": "Energetic",
-"value": "energetic "
+"k": "Energetic",
+"v": "energetic "
 },
 {
-"key": "Excited",
-"value": "excited "
+"k": "Excited",
+"v": "excited "
 },
 {
-"key": "Fascinated",
-"value": "fascinated "
+"k": "Fascinated",
+"v": "fascinated "
 },
 {
-"key": "Hopeful",
-"value": "hopeful "
+"k": "Hopeful",
+"v": "hopeful "
 },
 {
-"key": "Important",
-"value": "important "
+"k": "Important",
+"v": "important "
 },
 {
-"key": "Intimate",
-"value": "intimate "
+"k": "Intimate",
+"v": "intimate "
 },
 {
-"key": "Joyful",
-"value": "joyful "
+"k": "Joyful",
+"v": "joyful "
 },
 {
-"key": "Loving",
-"value": "loving "
+"k": "Loving",
+"v": "loving "
 },
 {
-"key": "Nurturing",
-"value": "nurturing "
+"k": "Nurturing",
+"v": "nurturing "
 },
 {
-"key": "Optimistic",
-"value": "optimistic "
+"k": "Optimistic",
+"v": "optimistic "
 },
 {
-"key": "Peaceful",
-"value": "peaceful "
+"k": "Peaceful",
+"v": "peaceful "
 },
 {
-"key": "Pensive",
-"value": "pensive "
+"k": "Pensive",
+"v": "pensive "
 },
 {
-"key": "Playful",
-"value": "playful "
+"k": "Playful",
+"v": "playful "
 },
 {
-"key": "Powerful",
-"value": "powerful "
+"k": "Powerful",
+"v": "powerful "
 },
 {
-"key": "Proud",
-"value": "proud "
+"k": "Proud",
+"v": "proud "
 },
 {
-"key": "Relaxed",
-"value": "relaxed "
+"k": "Relaxed",
+"v": "relaxed "
 },
 {
-"key": "Respected",
-"value": "respected "
+"k": "Respected",
+"v": "respected "
 },
 {
-"key": "Responsive",
-"value": "responsive "
+"k": "Responsive",
+"v": "responsive "
 },
 {
-"key": "Secure",
-"value": "secure "
+"k": "Secure",
+"v": "secure "
 },
 {
-"key": "Sensuous",
-"value": "sensuous "
+"k": "Sensuous",
+"v": "sensuous "
 },
 {
-"key": "Serene",
-"value": "serene "
+"k": "Serene",
+"v": "serene "
 },
 {
-"key": "Successful",
-"value": "successful "
+"k": "Successful",
+"v": "successful "
 },
 {
-"key": "Thankful",
-"value": "thankful "
+"k": "Thankful",
+"v": "thankful "
 },
 {
-"key": "Thoughtful",
-"value": "thoughtful "
+"k": "Thoughtful",
+"v": "thoughtful "
 },
 {
-"key": "Trusting",
-"value": "trusting "
+"k": "Trusting",
+"v": "trusting "
 },
 {
-"key": "Valuable",
-"value": "valuable "
+"k": "Valuable",
+"v": "valuable "
 },
 {
-"key": "Worthwhile",
-"value": "worthwhile "
+"k": "Worthwhile",
+"v": "worthwhile "
 }
 ]
 },
 {
-"key": "wantsDouble",
+"k": "wantsDouble",
 "main": {
-"key": "Add a feeling",
-"value": "I also want to feel ",
+"k": "Add a feeling",
+"v": "I also want to feel ",
 "explaination": "Add feelings you want to have.",
 "search": ""
 },
 "actions": [
-{"key": "Add my own", "value": "", "editable": true
+{"k": "Add my own", "v": "", "editable": true
 },
 {
-"key": "Amused", "value": "amused "
+"k": "Amused", "v": "amused "
 },
 {
-"key": "Appreciated", "value": "appreciated "
+"k": "Appreciated", "v": "appreciated "
 },
 {
-"key": "Aware", "value": "aware "
+"k": "Aware", "v": "aware "
 },
 {
-"key": "Cheerful", "value": "cheerful "
+"k": "Cheerful", "v": "cheerful "
 },
 {
-"key": "Confident", "value": "confident "
+"k": "Confident", "v": "confident "
 },
 {
-"key": "Content", "value": "content "
+"k": "Content", "v": "content "
 },
 {
-"key": "Creative", "value": "creative "
+"k": "Creative", "v": "creative "
 },
 {
-"key": "Daring", "value": "daring "
+"k": "Daring", "v": "daring "
 },
 {
-"key": "Discerning", "value": "discerning "
+"k": "Discerning", "v": "discerning "
 },
 {
-"key": "Energetic", "value": "energetic "
+"k": "Energetic", "v": "energetic "
 },
 {
-"key": "Excited", "value": "excited "
+"k": "Excited", "v": "excited "
 },
 {
-"key": "Fascinated", "value": "fascinated "
+"k": "Fascinated", "v": "fascinated "
 },
 {
-"key": "Hopeful", "value": "hopeful "
+"k": "Hopeful", "v": "hopeful "
 },
 {
-"key": "Important", "value": "important "
+"k": "Important", "v": "important "
 },
 {
-"key": "Intimate", "value": "intimate "
+"k": "Intimate", "v": "intimate "
 },
 {
-"key": "Joyful", "value": "joyful "
+"k": "Joyful", "v": "joyful "
 },
 {
-"key": "Loving", "value": "loving "
+"k": "Loving", "v": "loving "
 },
 {
-"key": "Nurturing", "value": "nurturing "
+"k": "Nurturing", "v": "nurturing "
 },
 {
-"key": "Optimistic", "value": "optimistic "
+"k": "Optimistic", "v": "optimistic "
 },
 {
-"key": "Peaceful", "value": "peaceful "
+"k": "Peaceful", "v": "peaceful "
 },
 {
-"key": "Pensive", "value": "pensive "
+"k": "Pensive", "v": "pensive "
 },
 {
-"key": "Playful", "value": "playful "
+"k": "Playful", "v": "playful "
 },
 {
-"key": "Powerful", "value": "powerful "
+"k": "Powerful", "v": "powerful "
 },
 {
-"key": "Proud", "value": "proud "
+"k": "Proud", "v": "proud "
 },
 {
-"key": "Relaxed", "value": "relaxed "
+"k": "Relaxed", "v": "relaxed "
 },
 {
-"key": "Respected", "value": "respected "
+"k": "Respected", "v": "respected "
 },
 {
-"key": "Responsive", "value": "responsive "
+"k": "Responsive", "v": "responsive "
 },
 {
-"key": "Secure", "value": "secure "
+"k": "Secure", "v": "secure "
 },
 {
-"key": "Sensuous", "value": "sensuous "
+"k": "Sensuous", "v": "sensuous "
 },
 {
-"key": "Serene", "value": "serene "
+"k": "Serene", "v": "serene "
 },
 {
-"key": "Successful", "value": "successful "
+"k": "Successful", "v": "successful "
 },
 {
-"key": "Thankful", "value": "thankful "
+"k": "Thankful", "v": "thankful "
 },
 {
-"key": "Thoughtful", "value": "thoughtful "
+"k": "Thoughtful", "v": "thoughtful "
 },
 {
-"key": "Trusting", "value": "trusting "
+"k": "Trusting", "v": "trusting "
 },
 {
-"key": "Valuable", "value": "valuable "
+"k": "Valuable", "v": "valuable "
 },
 {
-"key": "Worthwhile", "value": "worthwhile "}
+"k": "Worthwhile", "v": "worthwhile "}
 ]
 },
 {
 "response": {
-"key": "wantsResponse",
+"k": "wantsResponse",
 "main": {
-"key": "Respond to wants...",
-"value": "",
+"k": "Respond to wants...",
+"v": "",
 "explaination": "Summarize your chat buddy's wants in your own words"
 },
 "actions": [
-{"key": "I hear...", "value": "I hear that "},
-{"key": "I feel (about your situation)...", "value": "I feel "},
-{"key": "You're saying...", "value": "You're saying that "},
-{"key": "I wish...", "value": "I wish that "}
+{"k": "I hear...", "v": "I hear that "},
+{"k": "I feel (about your situation)...", "v": "I feel "},
+{"k": "You're saying...", "v": "You're saying that "},
+{"k": "I wish...", "v": "I wish that "}
 ]
 }
 },
 {
-"key": "thinking",
+"k": "thinking",
 "main": {
-"key": "I'm thinking...",
-"value": "I'm thinking ",
+"k": "I'm thinking...",
+"v": "I'm thinking ",
 "explaination": "Share a thought or worry you have about your situation.",
 "tail": "that "
 },
 "actions": [
 {
-"key": "Add my own",
-"value": "",
+"k": "Add my own",
+"v": "",
 "editable": true
 },
 {
-"key": "About me",
-"value": "(about me) "
+"k": "About me",
+"v": "(about me) "
 },
 {
-"key": "About the situation",
-"value": "(about the situation) "
+"k": "About the situation",
+"v": "(about the situation) "
 },
 {
-"key": "About them",
-"value": "(about them) "
+"k": "About them",
+"v": "(about them) "
 }
 ]
 },
 {
-"key": "thoughts",
+"k": "thoughts",
 "main": {
-"key": "My thought is...",
+"k": "My thought is...",
 "explaination": "Choose a type of thought that fits for your state of mind.",
 "tail": "fits because "
 },
 "actions": [
 {
-"key": "Add my own",
-"value": "",
+"k": "Add my own",
+"v": "",
 "explaination": "",
 "editable": true
 },
 {
-"key": "An all or nothing thought:",
-"value": "an all or nothing thought ",
+"k": "An all or nothing thought:",
+"v": "an all or nothing thought ",
 "explaination": "Simplifying into two extremes (e.g. either all good/all bad)"
 },
 {
-"key": "A blaming thought:",
-"value": "a blaming thought ",
+"k": "A blaming thought:",
+"v": "a blaming thought ",
 "explaination": "Faulting a single source for all the trouble"
 },
 {
-"key": "A mind reading thought:",
-"value": "a mind reading thought ",
+"k": "A mind reading thought:",
+"v": "a mind reading thought ",
 "explaination": "Assuming you know people’s reasons or judgments"
 },
 {
-"key": "An overgeneralizing thought:",
-"value": "an overgeneralizing thought ",
+"k": "An overgeneralizing thought:",
+"v": "an overgeneralizing thought ",
 "explaination": "Thinking all incidents will be exactly like the one incident"
 },
 {
-"key": "A personalizing thought:",
-"value": "a personalizing thought ",
+"k": "A personalizing thought:",
+"v": "a personalizing thought ",
 "explaination": "Thinking a bad outcome results from a bad in you"
 },
 {
-"key": "A worst case scenario thought:",
-"value": "a worst case scenario thought ",
+"k": "A worst case scenario thought:",
+"v": "a worst case scenario thought ",
 "explaination": "Believing the worst is going to happen"
 }
 ]
 },
 {
-"key": "thoughtsDouble",
+"k": "thoughtsDouble",
 "main": {
-"key": "Add a thought",
-"value": "I’m also having ",
+"k": "Add a thought",
+"v": "I’m also having ",
 "explaination": "Add types of thoughts that fit.",
 "tail": "because "
 },
 "actions": [
 {
-"key": "Add my own",
-"value": "",
+"k": "Add my own",
+"v": "",
 "explaination": "",
 "editable": true
 },
 {
-"key": "An all or nothing thought:",
-"value": "an all or nothing thought ",
+"k": "An all or nothing thought:",
+"v": "an all or nothing thought ",
 "explaination": "Simplifying into two extremes (e.g. either all good/all bad)"
 },
 {
-"key": "A blaming thought:",
-"value": "a blaming thought ",
+"k": "A blaming thought:",
+"v": "a blaming thought ",
 "explaination": "Faulting a single source for all the trouble"
 },
 {
-"key": "A mind reading thought:",
-"value": "a mind reading thought ",
+"k": "A mind reading thought:",
+"v": "a mind reading thought ",
 "explaination": "Assuming you know people’s reasons or judgments"
 },
 {
-"key": "An overgeneralizing thought:",
-"value": "an overgeneralizing thought ",
+"k": "An overgeneralizing thought:",
+"v": "an overgeneralizing thought ",
 "explaination": "Thinking all incidents will be exactly like the one incident"
 },
 {
-"key": "A personalizing thought:",
-"value": "a personalizing thought ",
+"k": "A personalizing thought:",
+"v": "a personalizing thought ",
 "explaination": "Thinking a bad outcome results from a bad in you"
 },
 {
-"key": "A worst case scenario thought:",
-"value": "a worst case scenario thought ",
+"k": "A worst case scenario thought:",
+"v": "a worst case scenario thought ",
 "explaination": "Believing the worst is going to happen"
 }
 ]
 },
 {
 "response": {
-"key": "thoughtsResponse",
+"k": "thoughtsResponse",
 "main": {
-"key": "Respond to thoughts...",
-"value": "",
+"k": "Respond to thoughts...",
+"v": "",
 "explaination": "Summarize your chat buddy's thoughts in your own words"
 },
 "actions": [
-{"key": "I hear...", "value": "I hear that "},
-{"key": "I feel (about your situation)...", "value": "I feel "},
-{"key": "You're saying...", "value": "You're saying that "},
-{"key": "I wish...", "value": "I wish that "}
+{"k": "I hear...", "v": "I hear that "},
+{"k": "I feel (about your situation)...", "v": "I feel "},
+{"k": "You're saying...", "v": "You're saying that "},
+{"k": "I wish...", "v": "I wish that "}
 ]
 }
 },
 {
-"key": "feelings",
+"k": "feelings",
 "main": {
-"key": "My feeling is...",
-"value": "Feeling ",
+"k": "My feeling is...",
+"v": "Feeling ",
 "explaination": "Choose the feeling that's troubling you most. (You can add more later)",
 "tail": "troubles me most because ",
 "search": ""
 },
 "actions": [
-{"key": "Add my own", "value": "", "editable": true
+{"k": "Add my own", "v": "", "editable": true
 },
 {
-"key": "Angry", "value": "angry "
+"k": "Angry", "v": "angry "
 },
 {
-"key": "Anxious", "value": "anxious "
+"k": "Anxious", "v": "anxious "
 },
 {
-"key": "Apathetic", "value": "apathetic "
+"k": "Apathetic", "v": "apathetic "
 },
 {
-"key": "Ashamed", "value": "ashamed "
+"k": "Ashamed", "v": "ashamed "
 },
 {
-"key": "Bewildered", "value": "bewildered "
+"k": "Bewildered", "v": "bewildered "
 },
 {
-"key": "Bored", "value": "bored "
+"k": "Bored", "v": "bored "
 },
 {
-"key": "Confused", "value": "confused "
+"k": "Confused", "v": "confused "
 },
 {
-"key": "Critical", "value": "critical "
+"k": "Critical", "v": "critical "
 },
 {
-"key": "Depressed", "value": "depressed "
+"k": "Depressed", "v": "depressed "
 },
 {
-"key": "Discouraged", "value": "discouraged "
+"k": "Discouraged", "v": "discouraged "
 },
 {
-"key": "Distant", "value": "distant "
+"k": "Distant", "v": "distant "
 },
 {
-"key": "Embarrassed", "value": "embarrassed "
+"k": "Embarrassed", "v": "embarrassed "
 },
 {
-"key": "Frustrated", "value": "frustrated "
+"k": "Frustrated", "v": "frustrated "
 },
 {
-"key": "Guilty", "value": "guilty "
+"k": "Guilty", "v": "guilty "
 },
 {
-"key": "Hateful", "value": "hateful "
+"k": "Hateful", "v": "hateful "
 },
 {
-"key": "Helpless", "value": "helpless "
+"k": "Helpless", "v": "helpless "
 },
 {
-"key": "Hostile", "value": "hostile "
+"k": "Hostile", "v": "hostile "
 },
 {
-"key": "Hurt", "value": "hurt "
+"k": "Hurt", "v": "hurt "
 },
 {
-"key": "Inadequate", "value": "inadequate "
+"k": "Inadequate", "v": "inadequate "
 },
 {
-"key": "Inferior", "value": "inferior "
+"k": "Inferior", "v": "inferior "
 },
 {
-"key": "Insecure", "value": "insecure "
+"k": "Insecure", "v": "insecure "
 },
 {
-"key": "Insignificant", "value": "insignificant "
+"k": "Insignificant", "v": "insignificant "
 },
 {
-"key": "Irritated", "value": "irritated "
+"k": "Irritated", "v": "irritated "
 },
 {
-"key": "Isolated", "value": "isolated "
+"k": "Isolated", "v": "isolated "
 },
 {
-"key": "Jealous", "value": "jealous "
+"k": "Jealous", "v": "jealous "
 },
 {
-"key": "Lonely", "value": "lonely "
+"k": "Lonely", "v": "lonely "
 },
 {
-"key": "Mad", "value": "mad "
+"k": "Mad", "v": "mad "
 },
 {
-"key": "Overwhelmed", "value": "overwhelmed "
+"k": "Overwhelmed", "v": "overwhelmed "
 },
 {
-"key": "Rejected", "value": "rejected "
+"k": "Rejected", "v": "rejected "
 },
 {
-"key": "Remorseful", "value": "remorseful "
+"k": "Remorseful", "v": "remorseful "
 },
 {
-"key": "Sad", "value": "sad "
+"k": "Sad", "v": "sad "
 },
 {
-"key": "Sarcastic", "value": "sarcastic "
+"k": "Sarcastic", "v": "sarcastic "
 },
 {
-"key": "Scared", "value": "scared "
+"k": "Scared", "v": "scared "
 },
 {
-"key": "Selfish", "value": "selfish "
+"k": "Selfish", "v": "selfish "
 },
 {
-"key": "Sleepy", "value": "sleepy "
+"k": "Sleepy", "v": "sleepy "
 },
 {
-"key": "Stupid", "value": "stupid "
+"k": "Stupid", "v": "stupid "
 },
 {
-"key": "Submissive", "value": "submissive "
+"k": "Submissive", "v": "submissive "
 },
 {
-"key": "Tired", "value": "tired "}
+"k": "Tired", "v": "tired "}
 ]
 },
 {
-"key": "feelingsDouble",
+"k": "feelingsDouble",
 "main": {
-"key": "Add a feeling",
-"value": "I'm also feeling ",
+"k": "Add a feeling",
+"v": "I'm also feeling ",
 "explaination": "Add feelings you're having",
 "search": ""
 },
 "actions": [
-{"key": "Add my own", "value": "", "editable": true
+{"k": "Add my own", "v": "", "editable": true
 },
 {
-"key": "Angry", "value": "angry "
+"k": "Angry", "v": "angry "
 },
 {
-"key": "Anxious", "value": "anxious "
+"k": "Anxious", "v": "anxious "
 },
 {
-"key": "Apathetic", "value": "apathetic "
+"k": "Apathetic", "v": "apathetic "
 },
 {
-"key": "Ashamed", "value": "ashamed "
+"k": "Ashamed", "v": "ashamed "
 },
 {
-"key": "Bewildered", "value": "bewildered "
+"k": "Bewildered", "v": "bewildered "
 },
 {
-"key": "Bored", "value": "bored "
+"k": "Bored", "v": "bored "
 },
 {
-"key": "Confused", "value": "confused "
+"k": "Confused", "v": "confused "
 },
 {
-"key": "Critical", "value": "critical "
+"k": "Critical", "v": "critical "
 },
 {
-"key": "Depressed", "value": "depressed "
+"k": "Depressed", "v": "depressed "
 },
 {
-"key": "Discouraged", "value": "discouraged "
+"k": "Discouraged", "v": "discouraged "
 },
 {
-"key": "Distant", "value": "distant "
+"k": "Distant", "v": "distant "
 },
 {
-"key": "Embarrassed", "value": "embarrassed "
+"k": "Embarrassed", "v": "embarrassed "
 },
 {
-"key": "Frustrated", "value": "frustrated "
+"k": "Frustrated", "v": "frustrated "
 },
 {
-"key": "Guilty", "value": "guilty "
+"k": "Guilty", "v": "guilty "
 },
 {
-"key": "Hateful", "value": "hateful "
+"k": "Hateful", "v": "hateful "
 },
 {
-"key": "Helpless", "value": "helpless "
+"k": "Helpless", "v": "helpless "
 },
 {
-"key": "Hostile", "value": "hostile "
+"k": "Hostile", "v": "hostile "
 },
 {
-"key": "Hurt", "value": "hurt "
+"k": "Hurt", "v": "hurt "
 },
 {
-"key": "Inadequate", "value": "inadequate "
+"k": "Inadequate", "v": "inadequate "
 },
 {
-"key": "Inferior", "value": "inferior "
+"k": "Inferior", "v": "inferior "
 },
 {
-"key": "Insecure", "value": "insecure "
+"k": "Insecure", "v": "insecure "
 },
 {
-"key": "Insignificant", "value": "insignificant "
+"k": "Insignificant", "v": "insignificant "
 },
 {
-"key": "Irritated", "value": "irritated "
+"k": "Irritated", "v": "irritated "
 },
 {
-"key": "Isolated", "value": "isolated "
+"k": "Isolated", "v": "isolated "
 },
 {
-"key": "Jealous", "value": "jealous "
+"k": "Jealous", "v": "jealous "
 },
 {
-"key": "Lonely", "value": "lonely "
+"k": "Lonely", "v": "lonely "
 },
 {
-"key": "Mad", "value": "mad "
+"k": "Mad", "v": "mad "
 },
 {
-"key": "Overwhelmed", "value": "overwhelmed "
+"k": "Overwhelmed", "v": "overwhelmed "
 },
 {
-"key": "Rejected", "value": "rejected "
+"k": "Rejected", "v": "rejected "
 },
 {
-"key": "Remorseful", "value": "remorseful "
+"k": "Remorseful", "v": "remorseful "
 },
 {
-"key": "Sad", "value": "sad "
+"k": "Sad", "v": "sad "
 },
 {
-"key": "Sarcastic", "value": "sarcastic "
+"k": "Sarcastic", "v": "sarcastic "
 },
 {
-"key": "Scared", "value": "scared "
+"k": "Scared", "v": "scared "
 },
 {
-"key": "Selfish", "value": "selfish "
+"k": "Selfish", "v": "selfish "
 },
 {
-"key": "Sleepy", "value": "sleepy "
+"k": "Sleepy", "v": "sleepy "
 },
 {
-"key": "Stupid", "value": "stupid "
+"k": "Stupid", "v": "stupid "
 },
 {
-"key": "Submissive", "value": "submissive "
+"k": "Submissive", "v": "submissive "
 },
 {
-"key": "Tired", "value": "tired "}
+"k": "Tired", "v": "tired "}
 ]
 },
 {
 "response": {
-"key": "feelingsResponse",
+"k": "feelingsResponse",
 "main": {
-"key": "Respond to feelings...",
-"value": "",
+"k": "Respond to feelings...",
+"v": "",
 "explaination": "Summarize your chat buddy's feelings in your own words"
 },
 "actions": [
-{"key": "I hear...", "value": "I hear that "},
-{"key": "I feel (about your situation)...", "value": "I feel "},
-{"key": "You're saying...", "value": "You're saying that "},
-{"key": "I wish...", "value": "I wish that "}
+{"k": "I hear...", "v": "I hear that "},
+{"k": "I feel (about your situation)...", "v": "I feel "},
+{"k": "You're saying...", "v": "You're saying that "},
+{"k": "I wish...", "v": "I wish that "}
 ]
 }
 },
 {
-"key": "suggestions",
+"k": "suggestions",
 "main": {
-"key": "I'd try...",
-"value": "I'd try (in your situation) ",
+"k": "I'd try...",
+"v": "I'd try (in your situation) ",
 "explaination": "Share some ideas with your chat partner"
 },
 "actions": [
 {
-"key": "Add my own",
-"value": "",
+"k": "Add my own",
+"v": "",
 "editable": true
 },
 {
-"key": "Positive/hopeful thought",
-"value": "positive/hopeful thought of "
+"k": "Positive/hopeful thought",
+"v": "positive/hopeful thought of "
 },
 {
-"key": "Reaching out to allies",
-"value": "reaching out to allies who "
+"k": "Reaching out to allies",
+"v": "reaching out to allies who "
 },
 {
-"key": "A new action",
-"value": "a new action of "
+"k": "A new action",
+"v": "a new action of "
 },
 {
-"key": "Self-care",
-"value": "self-care by "
+"k": "Self-care",
+"v": "self-care by "
 }
 ]
 },
 {
-"key": "strategies",
+"k": "strategies",
 "main": {
-"key": "I'll try...",
-"value": "I'll try ",
+"k": "I'll try...",
+"v": "I'll try ",
 "explaination": "Choose a strategy to try as a next step"
 },
 "actions": [
 {
-"key": "Add my own",
-"value": "",
+"k": "Add my own",
+"v": "",
 "explaination": "",
 "editable": true
 },
 {
-"key": "An action strategy:",
-"value": "an action strategy of ",
+"k": "An action strategy:",
+"v": "an action strategy of ",
 "explaination": "A plan, behavior, timeline, or difference in your body"
 },
 {
-"key": "A mindful strategy:",
-"value": "a mindful strategy of ",
+"k": "A mindful strategy:",
+"v": "a mindful strategy of ",
 "explaination": "A new thought, reflection, or state of mind"
 },
 {
-"key": "A social strategy:",
-"value": "a social strategy of ",
+"k": "A social strategy:",
+"v": "a social strategy of ",
 "explaination": "Reaching out to supportive people, or changing your social scene"
 }
 ]
 },
 {
-"key": "closer",
+"k": "closer",
 "main": {
-"key": "Thank you!",
-"value": "Thank you! ",
+"k": "Thank you!",
+"v": "Thank you! ",
 "explaination": "Thank your chat buddy and encourage them :)"
 }
 }

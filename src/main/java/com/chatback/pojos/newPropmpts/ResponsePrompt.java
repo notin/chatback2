@@ -3,6 +3,7 @@ package com.chatback.pojos.newPropmpts;
 import java.util.List;
 
 import com.chatback.pojos.match.IGuid;
+import com.chatback.utils.JsonConverter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
@@ -19,9 +20,9 @@ import javax.persistence.Id;
 public class ResponsePrompt implements com.chatback.pojos.newPropmpts.Id
 {
 
-	@Id
+//	@Id
 //	@JsonProperty("id")
-	@Column(name = "id", updatable = false, nullable = false)
+	@Column(name = "id", updatable = true, nullable = false)
 	private String id= IGuid.getGUIS();
 
 	@ManyToOne
@@ -33,6 +34,13 @@ public class ResponsePrompt implements com.chatback.pojos.newPropmpts.Id
 	@JsonProperty("actions")
 	private ActionsItem[] actions;
 
+	@Id
 	@JsonProperty("k")
 	private String k;
+
+	@Override
+	public String toString()
+	{
+		return JsonConverter.toJson(this);
+	}
 }

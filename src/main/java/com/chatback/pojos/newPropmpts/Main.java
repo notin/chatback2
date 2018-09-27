@@ -1,6 +1,7 @@
 package com.chatback.pojos.newPropmpts;
 
 import com.chatback.pojos.match.IGuid;
+import com.chatback.utils.JsonConverter;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Data;
@@ -15,12 +16,11 @@ import javax.persistence.Id;
 @Builder
 @Entity
 @ToString
-public class Main
-		implements com.chatback.pojos.newPropmpts.Id{
+public class Main implements com.chatback.pojos.newPropmpts.Id{
 
-	@Id
+//	@Id
 //	@JsonProperty("id")
-	@Column(name = "id", updatable = false, nullable = false)
+//	@Column(name = "id", updatable = true, nullable = false)
 	private String id = IGuid.getGUIS();
 
 	@JsonProperty("explaination")
@@ -29,6 +29,13 @@ public class Main
 	@JsonProperty("v")
 	private String v;
 
+	@Id
 	@JsonProperty("k")
 	private String k;
+
+	@Override
+	public String toString()
+	{
+		return JsonConverter.toJson(this);
+	}
 }
