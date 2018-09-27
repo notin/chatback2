@@ -22,6 +22,7 @@ spring:
 
   server:
     session:
+    sessionTimeout: 60
     cookie:
       max-age: 36000
       timeout: 36000
