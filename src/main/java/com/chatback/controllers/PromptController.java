@@ -58,10 +58,10 @@ public class PromptController extends Controller
         responsePromptService.setAllResponse(collectResponse);
 
 //
-//        List<Prompts2> pompts2List = Arrays.stream(prompts2s).collect(Collectors.toList());
-//        List<Prompts2> toSend = Arrays.stream(prompts2s).collect(Collectors.toList());
-//        toSend.stream().forEachOrdered(x->System.out.println(x.toString()));
-//        promptService.setAllPropmts(toSend);
+        List<Prompts2> pompts2List = Arrays.stream(prompts2s).collect(Collectors.toList());
+        List<Prompts2> toSend = Arrays.stream(prompts2s).collect(Collectors.toList());
+        toSend.stream().forEachOrdered(x->System.out.println(x.toString()));
+        promptService.setAllPropmts(toSend);
 
     }
 

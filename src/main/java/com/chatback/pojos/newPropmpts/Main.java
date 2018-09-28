@@ -16,7 +16,8 @@ import javax.persistence.Id;
 @Builder
 @Entity
 @ToString
-public class Main implements com.chatback.pojos.newPropmpts.Id{
+public class Main
+		implements com.chatback.pojos.newPropmpts.Id{
 
 //	@Id
 //	@JsonProperty("id")
@@ -28,7 +29,6 @@ public class Main implements com.chatback.pojos.newPropmpts.Id{
 
 	@JsonProperty("v")
 	private String v;
-
 	@Id
 	@JsonProperty("k")
 	private String k;

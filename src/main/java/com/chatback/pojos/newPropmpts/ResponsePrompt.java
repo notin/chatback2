@@ -20,7 +20,7 @@ import javax.persistence.Id;
 public class ResponsePrompt implements com.chatback.pojos.newPropmpts.Id
 {
 
-//	@Id
+	@Id
 //	@JsonProperty("id")
 	@Column(name = "id", updatable = true, nullable = false)
 	private String id= IGuid.getGUIS();
@@ -34,7 +34,7 @@ public class ResponsePrompt implements com.chatback.pojos.newPropmpts.Id
 	@JsonProperty("actions")
 	private ActionsItem[] actions;
 
-	@Id
+//	@Id
 	@JsonProperty("k")
 	private String k;
 

@@ -19,7 +19,7 @@ import javax.persistence.Id;
 public class Prompts2
 {
 
-//	@Id
+	@Id
 //	@JsonProperty("id")
 //	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	@Column(name = "id", updatable = true, nullable = false)
@@ -33,7 +33,7 @@ public class Prompts2
 	@JsonProperty("main")
 	private Main main;
 
-	@Id
+//	@Id
 	@JsonProperty("k")
 	private String k;
 

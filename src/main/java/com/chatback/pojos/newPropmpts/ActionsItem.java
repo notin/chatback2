@@ -19,7 +19,7 @@ import javax.persistence.Id;
 public class ActionsItem
 {
 
-//	@Id
+	@Id
 //	@JsonProperty("id")
 	@Column(name = "id", updatable = true, nullable = false)
 	private String id= IGuid.getGUIS();
@@ -27,7 +27,7 @@ public class ActionsItem
 	@JsonProperty("v")
 	private String v;
 
-	@Id
+//	@Id
 	@JsonProperty("k")
 	private String k;
 
