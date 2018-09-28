@@ -5,6 +5,7 @@ import com.chatback.pojos.newPropmpts.ResponsePrompt;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -33,9 +34,19 @@ public class ActionItemService
 
     public void setAllResponse(List<ActionsItem[]> collect)
     {
+        List<ActionsItem> collect1 = new ArrayList<>();
         for(ActionsItem[] f : collect)
         {
-            actionItemService.saveAll(Arrays.stream(f).collect(Collectors.toList()));
+            if(f!=null) {
+                collect1.addAll(Arrays.stream(f).filter(x -> x != null)
+                        .collect(Collectors.toList()).stream()
+                        .filter(x -> x != null)
+                        .collect(Collectors.toList()));
+            }
+        }
+        if(collect1 !=null)
+        {
+            actionItemService.saveAll(collect1);
         }
     }
 
