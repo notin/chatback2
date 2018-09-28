@@ -16,6 +16,7 @@ public class MatchService
 
     private static List<Match> members = Collections.synchronizedList( new ArrayList<>());
     private static String guis = null;
+    private static int timeout = 300000;
 
     public static Match getMatch(Match match)
     {
@@ -55,19 +56,19 @@ public class MatchService
         return match1;
     }
 
-    public static void removeMatch(Match match, Supplier<String> supplier) {
+    public static void removeMatch(Match match, Supplier<String> supplier, Supplier<Boolean> supplier1) {
         Executor executor = Executors.newFixedThreadPool(5);
         Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(supplier.get())).findFirst().orElse(null);
         CompletableFuture<Match> completableFuture = getAttemptingRemoval(match, executor);
         CompletableFuture<Match> completableFuture2 = getAttemptingRemoval(partner, executor);
         try {
             if (match != null) {
-                if (match.isDelivered() == true) {
+                if (supplier1 !=null && supplier1.get()) {
                     completableFuture.get();
                 }
             }
             if (partner != null) {
-                if (partner.isDelivered() == true) {
+                if (partner.isDelivered()) {
                     completableFuture2.get();
                 }
             }
@@ -91,9 +92,15 @@ public class MatchService
                                                                     TimeUnit.MILLISECONDS.sleep(15);
                                                                     Logger.getAnonymousLogger().info("attempting match" + match.getSelf());
                                                                     members.stream().filter(x->!x.getSelf().equalsIgnoreCase(match.getSelf())).forEachOrdered(x->Logger.getAnonymousLogger().info("matches in member list " + x.getSelf()));
-
-                                                                    members.stream().forEachOrdered(x->removeOld(x));
-                                                                    getMember(match);
+                                                                    markOld(match);
+                                                                    if(!match.getTimeout())
+                                                                    {
+                                                                        getMember(match);
+                                                                    }
+                                                                    else
+                                                                    {
+                                                                        break;
+                                                                    }
 
                                                                 }
                                                                 catch (Exception e)
@@ -105,15 +112,28 @@ public class MatchService
 
     }
 
+    private static synchronized void markOld(Match match) {
+
+        if(System.currentTimeMillis()-Long.valueOf(match.getTimestamp())> timeout)
+        {
+            match.setTimeout(true);
+        }
+    }
+
+    public static void removeOld() {
+        members.stream().forEachOrdered(x->removeOld(x));
+    }
+
     private static void removeOld(Match match)  {
         String timestamp = match.getTimestamp();
 
         Logger.getAnonymousLogger().info("removing old request from user "+ match.getSelf());
-        if(System.currentTimeMillis()-Long.valueOf(timestamp)>30000)
+        if(System.currentTimeMillis()-Long.valueOf(timestamp)>timeout)
         {
             try
             {
-                removeMatch(match, match::getSelf);
+                match.setTimeout(true);
+                removeMatch(match, match::getSelf, match::getTimeout);
                 throw new TimeoutException();
             }
             catch (Exception e)
@@ -147,12 +167,12 @@ public class MatchService
                 return match; }}, executor);
     }
 
-    private static Match getMember(Match match) {
+    private static synchronized Match getMember(Match match) {
 
         Match partner = null;
         while(partner == null && match.getPartner() ==null)
         {
-            partner = getMembers().stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).findFirst().orElse(null);
+            partner = getMembers().stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).filter(x->System.currentTimeMillis()-Long.valueOf(x.toString())<timeout).findFirst().orElse(null);
         }
         if(guis == null)
         {

@@ -31,6 +31,9 @@ public class Match
 	@JsonProperty("timestamp")
 	private String timestamp;
 
+	@JsonProperty("timedOut")
+	private Boolean timeout;
+
 	@Id
 	@JsonProperty("conversation")
 	private String conversation;

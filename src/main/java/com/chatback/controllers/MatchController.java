@@ -35,7 +35,8 @@ public class MatchController extends Controller
         {
             match.setDelivered(true);
             Logger.getAnonymousLogger().info( "delivering " + match.toString());
-            matchService.removeMatch(match,  match::getPartner);
+            matchService.removeMatch(match,  match::getPartner, match::isDelivered);
+            matchService.removeOld();
         }
         return toReturn;
     }
