@@ -1,15 +1,11 @@
 package com.chatback.controllers;
 
-import com.chatback.pojos.converation.Conversation;
-import com.chatback.pojos.converation.message.Message;
-import com.chatback.pojos.converation.message.MessageService;
 import com.chatback.pojos.match.Match;
 import com.chatback.pojos.match.MatchService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
-import java.util.List;
+import java.util.function.Supplier;
 import java.util.logging.Logger;
 
 @RestController
@@ -39,7 +35,7 @@ public class MatchController extends Controller
         {
             match.setDelivered(true);
             Logger.getAnonymousLogger().info( "delivering " + match.toString());
-            matchService.removeMatch(match);
+            matchService.removeMatch(match,  match::getPartner);
         }
         return toReturn;
     }

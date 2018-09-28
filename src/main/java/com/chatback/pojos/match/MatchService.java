@@ -55,25 +55,19 @@ public class MatchService
         return match1;
     }
 
-    public static void removeMatch(Match match)
-    {
+    public static void removeMatch(Match match, Supplier<String> supplier) {
         Executor executor = Executors.newFixedThreadPool(5);
-        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(match.getPartner())).findFirst().orElse(null);
+        Match partner = members.stream().filter(x -> x.getSelf().equalsIgnoreCase(supplier.get())).findFirst().orElse(null);
         CompletableFuture<Match> completableFuture = getAttemptingRemoval(match, executor);
         CompletableFuture<Match> completableFuture2 = getAttemptingRemoval(partner, executor);
-        try
-        {
-            if(match!=null)
-            {
-                if (match.isDelivered() == true)
-                {
+        try {
+            if (match != null) {
+                if (match.isDelivered() == true) {
                     completableFuture.get();
                 }
             }
-            if(partner !=null)
-            {
-                if (partner.isDelivered() == true)
-                {
+            if (partner != null) {
+                if (partner.isDelivered() == true) {
                     completableFuture2.get();
                 }
             }
@@ -114,11 +108,11 @@ public class MatchService
     private static void removeOld(Match match)  {
         String timestamp = match.getTimestamp();
 
-        if(System.currentTimeMillis()-Long.valueOf(timestamp)>300000)
+        if(System.currentTimeMillis()-Long.valueOf(timestamp)>30000)
         {
             try
             {
-                removeMatch(match);
+                removeMatch(match, match::getSelf);
                 throw new TimeoutException();
             }
             catch (Exception e)
