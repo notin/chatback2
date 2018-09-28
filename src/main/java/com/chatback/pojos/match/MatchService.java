@@ -108,6 +108,7 @@ public class MatchService
     private static void removeOld(Match match)  {
         String timestamp = match.getTimestamp();
 
+        Logger.getAnonymousLogger().info("removing old request from user "+ match.getSelf());
         if(System.currentTimeMillis()-Long.valueOf(timestamp)>30000)
         {
             try
