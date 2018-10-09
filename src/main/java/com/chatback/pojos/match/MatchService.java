@@ -89,11 +89,9 @@ public class MatchService
                                                             {
                                                                 try
                                                                 {
-                                                                    TimeUnit.MILLISECONDS.sleep(15);
                                                                     Logger.getAnonymousLogger().info("attempting match" + match.getSelf());
                                                                     members.stream().filter(x->!x.getSelf().equalsIgnoreCase(match.getSelf())).forEachOrdered(x->Logger.getAnonymousLogger().info("matches in member list " + x.getSelf()));
-                                                                    markOld(match);
-                                                                    if(!match.getTimeout())
+                                                                    if(isTimedout(match))
                                                                     {
                                                                         getMember(match);
                                                                     }
@@ -112,12 +110,18 @@ public class MatchService
 
     }
 
-    private static synchronized void markOld(Match match) {
+    private static void markOld(Match match) {
 
-        if(System.currentTimeMillis()-Long.valueOf(match.getTimestamp())> timeout)
+        if(isTimedout(match))
         {
             match.setTimeout(true);
         }
+    }
+
+    private static boolean isTimedout(Match match) {
+        long l = System.currentTimeMillis() - Long.valueOf(match.getTimestamp());
+        boolean b = l < timeout;
+        return b;
     }
 
     public static void removeOld() {
@@ -167,20 +171,22 @@ public class MatchService
                 return match; }}, executor);
     }
 
-    private static synchronized Match getMember(Match match) {
+    private static Match getMember(Match match) {
 
         Match partner = null;
-        while(partner == null && match.getPartner() ==null)
+        while(partner == null && isTimedout(match))
         {
-            partner = getMembers().stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).filter(x->System.currentTimeMillis()-Long.valueOf(x.toString())<timeout).findFirst().orElse(null);
-        }
-        if(guis == null)
-        {
-            guis = GuiGenerator.getGUIS();
-        }
-        if(match.isMatched() == false || partner.isMatched() == false)
-        {
-            settingValues(match, partner, guis);
+            Logger.getAnonymousLogger().info("looking at list for partner");
+            partner = getMembers().stream().filter(x -> !x.getSelf().equalsIgnoreCase(match.getSelf())).filter(x->isTimedout(x)).findFirst().orElse(null);
+
+            if(guis == null)
+            {
+                guis = GuiGenerator.getGUIS();
+            }
+            if(match.isMatched() == false || partner.isMatched() == false)
+            {
+                settingValues(match, partner, guis);
+            }
         }
         guis = null;
         return match;
@@ -222,7 +228,7 @@ public class MatchService
         match1.setMatched(true);
     }
 
-    private synchronized static List<Match> getMembers()
+    private static List<Match> getMembers()
     {
         return members;
     }

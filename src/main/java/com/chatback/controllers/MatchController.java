@@ -18,7 +18,7 @@ public class MatchController extends Controller
     @CrossOrigin
     @RequestMapping(value = "match", method = RequestMethod.POST, produces = "application/json", consumes = "application/json")
     @ResponseBody
-    public Match requestMatch(@RequestBody Match match)
+    public Match requestMatch(@RequestBody Match match) throws Exception
     {
         Match toReturn = match;
         try
@@ -30,14 +30,25 @@ public class MatchController extends Controller
         catch (Exception e)
         {
             Logger.getAnonymousLogger().info(e.getLocalizedMessage());
+            throw new Exception();
         }
         finally
         {
-            match.setDelivered(true);
-            Logger.getAnonymousLogger().info( "delivering " + match.toString());
-            matchService.removeMatch(match,  match::getPartner, match::isDelivered);
-            matchService.removeOld();
+            try
+            {
+                if (match.isMatched()) {
+                    match.setDelivered(true);
+                    Logger.getAnonymousLogger().info("delivering " + match.toString());
+                } else {
+                    Logger.getAnonymousLogger().info("failed to match  " + match.toString());
+                }
+                matchService.removeMatch(match, match::getPartner, match::isDelivered);
+                matchService.removeOld();
+            }
+            catch (Exception e)
+            {
+                Logger.getAnonymousLogger().info(e.getLocalizedMessage());
+            }
         }
-        return toReturn;
     }
 }
